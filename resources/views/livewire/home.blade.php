@@ -1,6 +1,5 @@
 <div>
 
-
     <!-- Hero with Video Background -->
     <section class="relative h-screen flex items-center justify-center text-white overflow-hidden video-bg">
         <video autoplay muted loop class="w-full h-full object-cover">
@@ -276,7 +275,55 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="py-20 bg-soft">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Our Impact in Numbers</h2>
+                <p class="mt-3 text-slate-500 max-w-2xl mx-auto">
+                    Quantifiable results that demonstrate our commitment to client success
+                </p>
+            </div>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up">
+                    <div class="text-4xl font-bold text-primary mb-2">200+</div>
+                    <h3 class="text-xl font-semibold text-slate-900">Successful Projects</h3>
+                    <p class="mt-3 text-slate-600 text-sm">
+                        Delivered high-quality solutions across various industries
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-primary mb-2">60% ↑</div>
+                    <h3 class="text-xl font-semibold text-slate-900">Traffic Growth</h3>
+                    <p class="mt-3 text-slate-600 text-sm">
+                        Average increase in organic traffic for our SEO clients
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-primary mb-2">30% ↑</div>
+                    <h3 class="text-xl font-semibold text-slate-900">Revenue Boost</h3>
+                    <p class="mt-3 text-slate-600 text-sm">
+                        Average revenue growth for businesses we've partnered with
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-primary mb-2">98%</div>
+                    <h3 class="text-xl font-semibold text-slate-900">Client Satisfaction</h3>
+                    <p class="mt-3 text-slate-600 text-sm">
+                        Of our clients would recommend our services to others
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Unique / Why Us Section -->
     <section id="unique" class="py-20">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -507,7 +554,6 @@
         </div>
     </section>
 
-    {{--
     <!-- Testimonials carousel -->
     <section id="testimonials" class="py-20 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -584,136 +630,8 @@
                 </div>
             </div>
         </div>
-    </section> --}}
-    <section id="testimonials" class="py-20 bg-white border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold">What Clients Say</h2>
-                <p class="mt-3 text-slate-500">Real feedback from real partners.</p>
-            </div>
-
-            <div class="mt-10 relative">
-                <div id="carousel" class="overflow-hidden">
-                    <div id="slides" class="flex transition-transform duration-500">
-                        <!-- Slide 1 -->
-                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                            <div class="p-8 rounded-2xl bg-soft card-border">
-                                <div class="flex gap-4 items-center">
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop"
-                                        class="w-14 h-14 rounded-full object-cover" />
-                                    <div>
-                                        <div class="font-semibold">Sarah Khan</div>
-                                        <div class="text-xs text-slate-400">
-                                            Founder, BrightCo
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-4 text-slate-600">
-                                    "Amazing growth in organic traffic and conversions. The
-                                    team's strategic approach is spot on."
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                            <div class="p-8 rounded-2xl bg-soft card-border">
-                                <div class="flex gap-4 items-center">
-                                    <img src="https://images.unsplash.com/photo-1545996124-1a12aed5a6b8?q=80&w=400&auto=format&fit=crop"
-                                        class="w-14 h-14 rounded-full object-cover" />
-                                    <div>
-                                        <div class="font-semibold">Omar Latif</div>
-                                        <div class="text-xs text-slate-400">
-                                            Marketing Lead, Nova
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-4 text-slate-600">
-                                    "They delivered on time and exceeded expectations. Highly
-                                    recommended for B2B SaaS."
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                            <div class="p-8 rounded-2xl bg-soft card-border">
-                                <div class="flex gap-4 items-center">
-                                    <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop"
-                                        class="w-14 h-14 rounded-full object-cover" />
-                                    <div>
-                                        <div class="font-semibold">Ayesha Mir</div>
-                                        <div class="text-xs text-slate-400">COO, TekWave</div>
-                                    </div>
-                                </div>
-                                <p class="mt-4 text-slate-600">
-                                    "Professional, communicative, and results-driven. Our
-                                    traffic doubled in 3 months."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- controls -->
-                <div class="flex justify-center gap-3 mt-6">
-                    <button class="dot w-3 h-3 rounded-full bg-slate-300" data-index="0"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-slate-300" data-index="1"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-slate-300" data-index="2"></button>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-soft">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Our Impact in Numbers</h2>
-                <p class="mt-3 text-slate-500 max-w-2xl mx-auto">
-                    Quantifiable results that demonstrate our commitment to client success
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Card 1 -->
-                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up">
-                    <div class="text-4xl font-bold text-primary mb-2">200+</div>
-                    <h3 class="text-xl font-semibold text-slate-900">Successful Projects</h3>
-                    <p class="mt-3 text-slate-600 text-sm">
-                        Delivered high-quality solutions across various industries
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-4xl font-bold text-primary mb-2">60% ↑</div>
-                    <h3 class="text-xl font-semibold text-slate-900">Traffic Growth</h3>
-                    <p class="mt-3 text-slate-600 text-sm">
-                        Average increase in organic traffic for our SEO clients
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-4xl font-bold text-primary mb-2">30% ↑</div>
-                    <h3 class="text-xl font-semibold text-slate-900">Revenue Boost</h3>
-                    <p class="mt-3 text-slate-600 text-sm">
-                        Average revenue growth for businesses we've partnered with
-                    </p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="p-6 bg-white card-border rounded-lg text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-4xl font-bold text-primary mb-2">98%</div>
-                    <h3 class="text-xl font-semibold text-slate-900">Client Satisfaction</h3>
-                    <p class="mt-3 text-slate-600 text-sm">
-                        Of our clients would recommend our services to others
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- FAQ Section -->
     <section class="py-20">
         <div class="max-w-4xl mx-auto px-6">
@@ -774,90 +692,4 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact / Footer -->
-    <footer id="contact" class="bg-white border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <div class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold shadow">
-                        A
-                    </div>
-                    <div>
-                        <div class="font-bold">ModernAgency</div>
-                        <div class="text-xs text-slate-400">Digital Solutions</div>
-                    </div>
-                </div>
-                <p class="mt-4 text-sm text-slate-500">
-                    We build modern, high-performance websites and digital strategies
-                    powered by data and creativity.
-                </p>
-            </div>
-
-            <div>
-                <h4 class="font-semibold">Contact</h4>
-                <ul class="mt-4 space-y-3 text-sm text-slate-500">
-                    <li>123 Business St, Lahore, Pakistan</li>
-                    <li>+92 300 0000000</li>
-                    <li>hello@modernagency.com</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="font-semibold">Newsletter</h4>
-                <p class="text-sm text-slate-500 mt-2">
-                    Get monthly insights and growth tips.
-                </p>
-                <form class="mt-4 flex gap-2">
-                    <input class="flex-1 rounded-lg border border-slate-200 p-3 text-sm" placeholder="Your email" />
-                    <button class="px-4 py-2 rounded-lg bg-accent text-white">
-                        Subscribe
-                    </button>
-                </form>
-
-                <div class="mt-6 flex items-center gap-3 text-slate-500">
-                    <a href="#" class="text-slate-400 hover:text-slate-600">Twitter</a>
-                    <a href="#" class="text-slate-400 hover:text-slate-600">LinkedIn</a>
-                    <a href="#" class="text-slate-400 hover:text-slate-600">Dribbble</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="border-t border-slate-100">
-            <div
-                class="max-w-7xl mx-auto px-6 lg:px-8 py-6 text-sm text-slate-400 flex flex-col md:flex-row justify-between">
-                <div>
-                    © <span id="year"></span> ModernAgency. All rights reserved.
-                </div>
-                <div class="mt-3 md:mt-0">
-                    Made with ♥ — <span class="font-medium">Tailwind CSS</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
 </div>
-
-@stack('script');
-<script>
-    const slides = document.getElementById("slides");
-  const dots = document.querySelectorAll(".dot");
-  let activeIndex = 0;
-
-  function updateCarousel(index) {
-    activeIndex = index;
-    const slideWidth = slides.children[0].offsetWidth;
-    slides.style.transform = `translateX(-${slideWidth * index}px)`;
-    dots.forEach((dot, i) =>
-      dot.classList.toggle("bg-slate-800", i === index)
-    );
-  }
-
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => updateCarousel(i));
-  });
-
-  // initialize
-  updateCarousel(0);
-</script>
