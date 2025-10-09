@@ -111,7 +111,7 @@
 
 <body class="antialiased text-slate-700 bg-soft">
   <!-- NAV + HERO: (Header + Nav + Hero in top-of-file) -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
+  {{-- <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between py-4">
         <!-- Logo -->
@@ -170,7 +170,9 @@
           Started</a>
       </div>
     </div>
-  </header>
+  </header> --}}
+
+  @livewire('layout.nav')
 
   {{ $slot }}
 

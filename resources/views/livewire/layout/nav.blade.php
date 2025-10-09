@@ -21,7 +21,59 @@
                     <a href="#unique" class="text-sm hover:text-slate-900">About Us</a>
                     <a href="#portfolio" class="text-sm hover:text-slate-900">Services</a>
                     {{-- <a href="#testimonials" class="text-sm hover:text-slate-900">Testimonials</a>
-                    <a href="#pricing" class="text-sm hover:text-slate-900">Pricing</a> --}}
+                    --}}
+
+                    <!-- Services dropdown -->
+                    <div class="relative group">
+                        <button type="button"
+                            class="text-sm flex items-center gap-1 hover:text-slate-900 focus:outline-none">
+                            Services
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 transform transition-transform group-hover:rotate-180" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="hidden group-hover:block absolute left-0 mt-2 w-48 bg-white shadow rounded-md py-2 ring-1 ring-slate-100 z-50">
+                            <a href="{{ route('website.development') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">Web
+                                Development</a>
+                            <a href="{{ route('social.media') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">Social
+                                Media Management</a>
+                            <a href="{{ route('seo') }}" class="block px-4 py-2 text-sm hover:bg-slate-50">SEO
+                                Services</a>
+                            <a href="{{ route('automation') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">CreativeAutomation</a>
+                            <a href="{{ route('creative.content') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">Consulting</a>
+                            {{-- lead generation --}}
+                            <a href="{{ route('lead.generation') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">Lead Generation</a>
+                            <a href="{{ route('paid.advertising') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">Paid
+                                Ads</a>
+
+                            {{-- creative content --}}
+                            <a href="{{ route('creative.contentservices') }}"
+                                class="block px-4 py-2 text-sm hover:bg-slate-50">Creative
+                                Content</a>
+
+                        </div>
+                    </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                        // remove the original Services anchor (if present) to avoid duplication
+                        const desktopNav = document.querySelector('header nav');
+                        if (!desktopNav) return;
+                        const original = desktopNav.querySelector('a[href="#portfolio"]');
+                        if (original) original.remove();
+                    });
+                    </script>
                     <a href="#contact" class="text-sm hover:text-slate-900">Contact</a>
                     <a href="#"
                         class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white text-sm shadow-sm">Get
