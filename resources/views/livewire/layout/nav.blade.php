@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="flex items-center justify-between py-4">
             <!-- Logo -->
-            <a wire:navigate href="{{ route('home') }}" class="flex items-center gap-3">
+            <a href="{{ route('home') }}" class="flex items-center gap-3">
                 <div
                     class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold shadow">
                     A
@@ -16,8 +16,8 @@
 
             <!-- Desktop nav -->
             <nav class="hidden md:flex items-center gap-6">
-                <a wire:navigate href="{{ route('home') }}" class="text-sm hover:text-slate-900">Home</a>
-                <a wire:navigate href="#unique" class="text-sm hover:text-slate-900">About Us</a>
+                <a href="{{ route('home') }}" class="text-sm hover:text-slate-900">Home</a>
+                <a href="#unique" class="text-sm hover:text-slate-900">About Us</a>
 
                 <!-- Services dropdown -->
                 <div class="relative" @click.away="servicesOpen = false">
