@@ -17,7 +17,7 @@
 
                 <!-- Desktop nav -->
                 <nav class="hidden md:flex items-center gap-6">
-                    <a href="#services" class="text-sm hover:text-slate-900">Home</a>
+                    <a href="{{ route('home') }}" class="text-sm hover:text-slate-900">Home</a>
                     <a href="#unique" class="text-sm hover:text-slate-900">About Us</a>
                     <a href="#portfolio" class="text-sm hover:text-slate-900">Services</a>
                     {{-- <a href="#testimonials" class="text-sm hover:text-slate-900">Testimonials</a>
