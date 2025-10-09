@@ -2,13 +2,27 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Modern Agency — Tailwind Landing</title>
   <meta name="description" content="Professional modern landing page built with Tailwind CSS" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+  {{-- icons link --}}
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  {{-- icoons cdn --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM6tU8zW+ltYdhxYNSoQZnNdi+f+XJpFsaBXjsOMm/tWtIaxVXM"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {{-- alpine js --}}
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  {{-- alpine js --}}
+  {{-- livewire --}}
+  @livewireStyles
 
   <script>
     // Tailwind config tweaks
@@ -16,27 +30,10 @@
         theme: {
           extend: {
             colors: {
-              primary: "#FF4D6D",
-              accent: "#6C63FF",
-              soft: "#F6F7FB",
-            },
-            boxShadow: {
-              "soft-lg": "0 10px 30px rgba(16,24,40,0.08)",
-            },
-            keyframes: {
-              float: {
-                "0%,100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-6px)" },
-              },
-            },
-            animation: {
-              float: "float 4s ease-in-out infinite",
-            },
-          },
-        },
-      };
+              primary: " #FF4D6D", accent: "#6C63FF" , soft: "#F6F7FB" , }, boxShadow: { "soft-lg"
+    : "0 10px 30px rgba(16,24,40,0.08)" , }, keyframes: { float: { "0%,100%" : { transform: "translateY(0)" }, "50%" : {
+    transform: "translateY(-6px)" }, }, }, animation: { float: "float 4s ease-in-out infinite" , }, }, }, }; 
   </script>
-
   <style>
     /* small custom styles */
     .glass {
@@ -176,7 +173,12 @@
 
   {{ $slot }}
 
+  @livewireScripts
+
+
   <!-- Contact / Footer -->
+
+
   <footer id="contact" class="bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
@@ -237,7 +239,9 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  @livewireScripts
+
+
   <!-- Scripts: mobile menu + carousel + reveal animations -->
   <script>
     document.getElementById("year").innerText = new Date().getFullYear();
@@ -358,6 +362,9 @@
       style.innerHTML = `@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} .animate-fadeIn{animation:fadeIn .7s ease forwards}`;
       document.head.appendChild(style);
   </script>
+
+
+
 </body>
 
 </html>
