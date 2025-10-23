@@ -17,7 +17,7 @@
             <!-- Desktop nav -->
             <nav class="hidden md:flex items-center gap-6">
                 <a href="{{ route('home') }}" class="text-sm hover:text-slate-900">Home</a>
-                <a href="#unique" class="text-sm hover:text-slate-900">About Us</a>
+                <a href="{{ route('about') }}" class="text-sm hover:text-slate-900">About Us</a>
 
                 <!-- Services dropdown -->
                 <div class="relative" @click.away="servicesOpen = false">
@@ -54,8 +54,8 @@
                     </div>
                 </div>
 
-                <a href="#contact" class="text-sm hover:text-slate-900">Contact</a>
-                <a href="{{ route('home') }}"
+                <a href="{{ route('contact') }}" class="text-sm hover:text-slate-900">Contact</a>
+                <a href="{{ route('contact') }}"
                     class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white text-sm shadow-sm">
                     Get Started
                 </a>
@@ -85,15 +85,14 @@
         class="md:hidden bg-white shadow-lg border-t border-slate-100 overflow-hidden">
         <div class="mx-6 mb-6 p-4 space-y-2">
             <a href="{{ route('home') }}" class="block py-2">Home</a>
-            <a href="#unique" class="block py-2">Why Us</a>
-            <a href="#portfolio" class="block py-2">Portfolio</a>
-            <a href="#pricing" class="block py-2">Pricing</a>
-            <a href="#contact" class="block py-2">Contact</a>
+            <a href="{{ route('about') }}" class="block py-2">About Us</a>
+            <a href="{{ route('contact')}}" class="block py-2">Contact</a>
 
             <!-- Dropdown inside mobile -->
             <details class="py-2">
                 <summary class="cursor-pointer text-sm font-medium">Services</summary>
                 <div class="pl-4 mt-2 space-y-1">
+                    <a href="{{ route('services') }}" class="block text-sm">Services</a>
                     <a href="{{ route('website.development') }}" class="block text-sm">Web Development</a>
                     <a href="{{ route('social.media') }}" class="block text-sm">Social Media</a>
                     <a href="{{ route('seo') }}" class="block text-sm">SEO</a>
@@ -105,7 +104,7 @@
                 </div>
             </details>
 
-            <a href="{{ route('home') }}"
+            <a href="{{ route('contact') }}"
                 class="mt-3 inline-block w-full text-center px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white">
                 Get Started
             </a>
