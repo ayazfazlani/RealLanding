@@ -182,7 +182,7 @@
   {{ $slot }}
 
   <!-- Contact / Footer -->
-  <footer id="contact" class="bg-[rgb(0,22,22)] border-t border-slate-100">
+  <footer id="contact" class="bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-2">
       <div>
         <div class="flex items-center gap-3">
