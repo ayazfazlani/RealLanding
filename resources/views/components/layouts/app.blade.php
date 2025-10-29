@@ -7,6 +7,7 @@
   <title>Modern Agency — Tailwind Landing</title>
   <meta name="description" content="Professional modern landing page built with Tailwind CSS" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/index.css" />
   {{--
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> --}}
   <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
@@ -110,6 +111,7 @@
       box-shadow: none;
     }
   </style>
+
 </head>
 
 <body class="antialiased text-slate-700 bg-soft">
@@ -180,23 +182,39 @@
   {{ $slot }}
 
   <!-- Contact / Footer -->
-  <footer id="contact" class="bg-white border-t border-slate-100">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+  <footer id="contact" class="bg-[rgb(0,22,22)] border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-2">
       <div>
         <div class="flex items-center gap-3">
-          <div
-            class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold shadow">
-            A
-          </div>
-          <div>
-            <div class="font-bold">ModernAgency</div>
-            <div class="text-xs text-slate-400">Digital Solutions</div>
-          </div>
+          <img class="h-14" src="{{ asset('assets/logo/reallanding-marketing-agency.png') }}" alt="">
         </div>
         <p class="mt-4 text-sm text-slate-500">
           We build modern, high-performance websites and digital strategies
           powered by data and creativity.
         </p>
+        {{-- social links with icons --}}
+        <div class="mt-6 flex items-center gap-3 text-slate-500">
+          <a href="https://www.facebook.com/RealLanding1
+" class="text-slate-400 hover:text-slate-600">
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href=" https://www.linkedin.com/company/real-landing/posts/ "
+            class="text-slate-400 hover:text-slate-600"><i class="fab fa-linkedin"></i> <span
+              class="sr-only">LinkedIn</span></a>
+          <a href="https://www.instagram.com/real.landing/
+" class="text-slate-400 hover:text-slate-600"><i class="fab fa-instagram"></i> <span
+              class="sr-only">Instagram</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold">Company</h4>
+        <ul class="mt-4 space-y-3 text-sm text-slate-500">
+          <li><a href="{{ route('home') }}">home</a></li>
+          <li><a href="{{ route('about') }}">about</a></li>
+          <li><a href="{{ route('services') }}">services</a></li>
+          <li><a href="{{ route('contact') }}">contact</a></li>
+        </ul>
       </div>
 
       <div>
@@ -213,18 +231,18 @@
         <p class="text-sm text-slate-500 mt-2">
           Get monthly insights and growth tips.
         </p>
-        <form class="mt-4 flex gap-2">
-          <input class="flex-1 rounded-lg border border-slate-200 p-3 text-sm" placeholder="Your email" />
-          <button class="px-4 py-2 rounded-lg bg-accent text-white">
-            Subscribe
-          </button>
+        <form class="mt-4 flex flex-col">
+          <div>
+            <input class="flex-1  w-full rounded-lg border border-slate-200 p-3 my-3 text-sm"
+              placeholder="Your email" />
+            <button class="px-4 py-2 rounded-lg bg-accent text-white">
+              Subscribe
+            </button>
+          </div>
+
         </form>
 
-        <div class="mt-6 flex items-center gap-3 text-slate-500">
-          <a href="#" class="text-slate-400 hover:text-slate-600">Twitter</a>
-          <a href="#" class="text-slate-400 hover:text-slate-600">LinkedIn</a>
-          <a href="#" class="text-slate-400 hover:text-slate-600">Dribbble</a>
-        </div>
+
       </div>
     </div>
 

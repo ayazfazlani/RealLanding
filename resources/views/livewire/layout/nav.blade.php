@@ -4,21 +4,18 @@
         <div class="flex items-center justify-between py-4">
             <!-- Logo -->
             <a href="{{ route('home') }}" class="flex items-center gap-3">
-                <div
+                {{-- <div
                     class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold shadow">
                     A
-                </div>
+                </div> --}}
                 <div>
-                    <div class="font-bold text-slate-900">ModernAgency</div>
-                    <div class="text-xs text-slate-400 -mt-1">Digital Solutions</div>
+                    <img class="h-14" src="{{ asset('assets/logo/reallanding-marketing-agency.png') }}" alt="">
                 </div>
             </a>
 
             <!-- Desktop nav -->
             <nav class="hidden md:flex items-center gap-6">
                 <a href="{{ route('home') }}" class="text-sm hover:text-slate-900">Home</a>
-                <a href="{{ route('about') }}" class="text-sm hover:text-slate-900">About Us</a>
-
                 <!-- Services dropdown -->
                 <div class="relative" @click.away="servicesOpen = false">
                     <button type="button" @click="servicesOpen = !servicesOpen"
@@ -53,6 +50,7 @@
                             Content</a>
                     </div>
                 </div>
+                <a href="{{ route('about') }}" class="text-sm hover:text-slate-900">About Us</a>
 
                 <a href="{{ route('contact') }}" class="text-sm hover:text-slate-900">Contact</a>
                 <a href="{{ route('contact') }}"

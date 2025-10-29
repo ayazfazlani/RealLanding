@@ -1,121 +1,6 @@
 <div>
     {{-- Stop trying to control. --}}
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-        :root {
-            --primary: #FF4D6D;
-            --accent: #6C63FF;
-            --lead-gold: #FFD700;
-            --lead-blue: #1E40AF;
-            --soft: #F6F7FB;
-            --dark: #1E293B;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, #1E40AF 0%, #3730A3 100%);
-        }
-
-        .lead-gradient {
-            background: linear-gradient(135deg, var(--lead-blue), #3730A3);
-        }
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .process-step {
-            position: relative;
-        }
-
-        .process-step:not(:last-child):after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: -20px;
-            width: 40px;
-            height: 2px;
-            background: #E2E8F0;
-            z-index: 1;
-        }
-
-        .floating {
-            animation: floating 6s ease-in-out infinite;
-        }
-
-        @keyframes floating {
-            0% {
-                transform: translate(0, 0px);
-            }
-
-            50% {
-                transform: translate(0, 15px);
-            }
-
-            100% {
-                transform: translate(0, -0px);
-            }
-        }
-
-        .text-gradient {
-            background: linear-gradient(90deg, var(--lead-blue), #3730A3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .gold-gradient {
-            background: linear-gradient(90deg, #FFD700, #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .glow {
-            box-shadow: 0 0 20px rgba(30, 64, 175, 0.3);
-        }
-
-        .gold-glow {
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
-        }
-
-        .section-divider {
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #E2E8F0, transparent);
-        }
-
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 16px;
-            margin-bottom: 20px;
-        }
-
-        .bg-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .lead-bg {
-            background: linear-gradient(135deg, #1E40AF 0%, #3730A3 100%);
-        }
-
-        .funnel-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20c0-11.046-8.954-20-20-20v20h20z' fill='%231E40AF' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-    </style>
-
-
-    <!-- 🟦 Section 1: Hero Banner -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-indigo-900/80 z-10"></div>
@@ -543,7 +428,7 @@
                     </div>
                 </div>
 
-                <!-- Case Study 2 -->
+                <!-- Case Study 2 (Fixed) -->
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100"
                     data-aos="fade-up" data-aos-delay="200">
                     <div
@@ -551,36 +436,38 @@
                         <div class="text-center p-6">
                             <div class="text-4xl font-bold mb-2">450+</div>
                             <div class="text-xl font-medium">Leads Generated</div>
-
-                            <p class="text-slate-600 mb-4">450+ qualified leads in 30 days for a suburban development
-                                using targeted ad funnels and WhatsApp automation.</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm font-medium text-[#FF8C00]">WhatsApp + Meta</span>
-                                <a href="#" class="text-sm font-medium hover:text-[#FFD700] transition-colors">View
-                                    Details →</a>
-                            </div>
                         </div>
                     </div>
-
-                    <!-- Case Study 3 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div
-                            class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white">
-                            <div class="text-center p-6">
-                                <div class="text-4xl font-bold mb-2">1.2k+</div>
-                                <div class="text-xl font-medium">Engaged Leads</div>
-                            </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Suburban Development Campaign</h3>
+                        <p class="text-slate-600 mb-4">450+ qualified leads in 30 days for a suburban development
+                            using targeted ad funnels and WhatsApp automation.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-[#FF8C00]">WhatsApp + Meta</span>
+                            <a href="#" class="text-sm font-medium hover:text-[#FFD700] transition-colors">View
+                                Details →</a>
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Off-Plan Development Push</h3>
-                            <p class="text-slate-600 mb-4">1,200+ engaged leads across email and SMS nurtures, improving
-                                pipeline velocity and qualified appointments.</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm font-medium text-[#16A34A]">CRM & Email Automation</span>
-                                <a href="#" class="text-sm font-medium hover:text-[#FFD700] transition-colors">View
-                                    Details →</a>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white">
+                        <div class="text-center p-6">
+                            <div class="text-4xl font-bold mb-2">1.2k+</div>
+                            <div class="text-xl font-medium">Engaged Leads</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Off-Plan Development Push</h3>
+                        <p class="text-slate-600 mb-4">1,200+ engaged leads across email and SMS nurtures, improving
+                            pipeline velocity and qualified appointments.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-[#16A34A]">CRM & Email Automation</span>
+                            <a href="#" class="text-sm font-medium hover:text-[#FFD700] transition-colors">View
+                                Details →</a>
                         </div>
                     </div>
                 </div>
