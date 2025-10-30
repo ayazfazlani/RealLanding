@@ -1,89 +1,10 @@
 <div>
     {{-- The whole world belongs to you. --}}
 
-
-    <!-- Navigation -->
-    {{-- <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex items-center justify-between py-4">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-3">
-                    <div
-                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF4D6D] to-[#6C63FF] flex items-center justify-center text-white font-bold shadow">
-                        A
-                    </div>
-                    <div>
-                        <div class="font-bold text-slate-900">ModernAgency</div>
-                        <div class="text-xs text-slate-400 -mt-1">Digital Solutions</div>
-                    </div>
-                </a>
-
-                <!-- Desktop nav -->
-                <nav class="hidden md:flex items-center gap-6">
-                    <a href="index.html#services"
-                        class="text-sm font-medium hover:text-[#6C63FF] transition-colors">Services</a>
-                    <a href="branding-strategy.html"
-                        class="text-sm font-medium hover:text-[#6C63FF] transition-colors">Branding</a>
-                    <a href="website-development.html"
-                        class="text-sm font-medium hover:text-[#6C63FF] transition-colors">Web Development</a>
-                    <a href="seo.html" class="text-sm font-medium hover:text-[#6C63FF] transition-colors">SEO</a>
-                    <a href="social-media.html"
-                        class="text-sm font-medium hover:text-[#6C63FF] transition-colors">Social Media</a>
-                    <a href="paid-advertising.html"
-                        class="text-sm font-medium hover:text-[#6C63FF] transition-colors">Paid Ads</a>
-                    <a href="creative-content.html"
-                        class="text-sm font-medium hover:text-[#6C63FF] transition-colors">Creative</a>
-                    <a href="automation-ai-crm.html"
-                        class="text-sm font-medium text-[#4361EE] transition-colors">Automation & AI</a>
-                    <a href="#contact"
-                        class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#4361EE] to-[#7209B7] text-white text-sm font-medium shadow-sm hover:shadow-md transition-all">
-                        Get Started
-                    </a>
-                </nav>
-
-                <!-- Mobile toggle -->
-                <div class="md:hidden">
-                    <button id="mobileBtn"
-                        class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4361EE]/40">
-                        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile menu -->
-        <div id="mobileMenu"
-            class="md:hidden transform -translate-y-1/2 opacity-0 pointer-events-none transition-all duration-300 absolute left-0 right-0 bg-white shadow-lg">
-            <div class="mx-6 mb-6 bg-white rounded-xl shadow-lg p-4">
-                <a href="index.html#services" class="block py-2 font-medium">Services</a>
-                <a href="branding-strategy.html" class="block py-2 font-medium">Branding</a>
-                <a href="website-development.html" class="block py-2 font-medium">Web Development</a>
-                <a href="seo.html" class="block py-2 font-medium">SEO</a>
-                <a href="social-media.html" class="block py-2 font-medium">Social Media</a>
-                <a href="paid-advertising.html" class="block py-2 font-medium">Paid Ads</a>
-                <a href="creative-content.html" class="block py-2 font-medium">Creative</a>
-                <a href="automation-ai-crm.html" class="block py-2 font-medium text-[#4361EE]">Automation & AI</a>
-                <a href="#contact"
-                    class="mt-3 inline-block w-full text-center px-4 py-2 rounded-lg bg-gradient-to-r from-[#4361EE] to-[#7209B7] text-white font-medium">
-                    Get Started
-                </a>
-            </div>
-        </div>
-    </header> --}}
-
-    <!-- 🟦 Section 1: Hero Banner -->
+    <!-- 🟩 Section 1: Hero Banner -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/80 z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-black/80 z-10"></div>
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="AI chatbot interface and CRM dashboard" class="w-full h-full object-cover" />
         </div>
@@ -106,7 +27,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
                 <a href="#contact"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-[#4361EE] to-[#7209B7] text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2 neon-glow">
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2 neon-glow">
                     <i class="fas fa-robot"></i>
                     Book a Free Automation Demo
                 </a>
@@ -125,8 +46,8 @@
         </div>
 
         <!-- Floating elements -->
-        <div class="absolute top-20 left-10 w-6 h-6 rounded-full bg-[#4361EE] opacity-30 floating"></div>
-        <div class="absolute bottom-40 right-20 w-10 h-10 rounded-full bg-[#7209B7] opacity-20 floating"
+        <div class="absolute top-20 left-10 w-6 h-6 rounded-full bg-primary opacity-30 floating"></div>
+        <div class="absolute bottom-40 right-20 w-10 h-10 rounded-full bg-accent opacity-20 floating"
             style="animation-delay: 1s;"></div>
         <div class="absolute top-1/3 right-1/4 w-8 h-8 rounded-full bg-white opacity-10 floating"
             style="animation-delay: 2s;"></div>
@@ -155,17 +76,17 @@
 
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-3xl font-bold text-[#4361EE] mb-2">24/7</div>
+                    <div class="text-3xl font-bold text-primary mb-2">24/7</div>
                     <div class="font-medium">Instant Response</div>
                     <p class="text-slate-600 text-sm mt-2">AI chatbots respond to leads anytime, day or night</p>
                 </div>
                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-3xl font-bold text-[#7209B7] mb-2">70%</div>
+                    <div class="text-3xl font-bold text-accent mb-2">70%</div>
                     <div class="font-medium">Faster Follow-ups</div>
                     <p class="text-slate-600 text-sm mt-2">Automated systems dramatically reduce response time</p>
                 </div>
                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100" data-aos="fade-up" data-aos-delay="500">
-                    <div class="text-3xl font-bold text-[#4361EE] mb-2">3x</div>
+                    <div class="text-3xl font-bold text-primary mb-2">3x</div>
                     <div class="font-medium">More Conversions</div>
                     <p class="text-slate-600 text-sm mt-2">Automated nurturing converts more leads to clients</p>
                 </div>
@@ -173,7 +94,7 @@
         </div>
     </section>
 
-    <!-- 🟨 Section 3: Our Automation & CRM Solutions -->
+    <!-- 🟩 Section 3: Our Automation & CRM Solutions -->
     <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -261,13 +182,13 @@
                     </div>
 
                     <!-- Floating element -->
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#4361EE] opacity-10 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary opacity-10 rounded-full -z-10"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🟦 Section 4: Our Process -->
+    <!-- 🟩 Section 4: Our Process -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -284,10 +205,10 @@
                 <div class="process-step text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100"
                     data-aos="fade-up" data-aos-delay="100">
                     <div
-                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
+                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
                         <i class="fas fa-comments"></i>
                     </div>
-                    <div class="mb-2 font-bold text-blue-600">Step 1</div>
+                    <div class="mb-2 font-bold text-primary">Step 1</div>
                     <h3 class="text-xl font-bold mb-3">Consultation</h3>
                     <p class="text-slate-600">
                         Understand your sales flow, challenges, and goals.
@@ -298,10 +219,10 @@
                 <div class="process-step text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border border-purple-100"
                     data-aos="fade-up" data-aos-delay="200">
                     <div
-                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
+                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
                         <i class="fas fa-project-diagram"></i>
                     </div>
-                    <div class="mb-2 font-bold text-purple-600">Step 2</div>
+                    <div class="mb-2 font-bold text-primary">Step 2</div>
                     <h3 class="text-xl font-bold mb-3">Planning</h3>
                     <p class="text-slate-600">
                         Map out automation workflows and CRM structure.
@@ -312,10 +233,10 @@
                 <div class="process-step text-center p-6 bg-gradient-to-br from-pink-50 to-red-50 rounded-2xl border border-pink-100"
                     data-aos="fade-up" data-aos-delay="300">
                     <div
-                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-pink-500 to-red-500 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
+                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
                         <i class="fas fa-cogs"></i>
                     </div>
-                    <div class="mb-2 font-bold text-pink-600">Step 3</div>
+                    <div class="mb-2 font-bold text-primary">Step 3</div>
                     <h3 class="text-xl font-bold mb-3">Setup</h3>
                     <p class="text-slate-600">
                         Integrate AI chatbots, CRM, and automation tools.
@@ -326,10 +247,10 @@
                 <div class="process-step text-center p-6 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl border border-green-100"
                     data-aos="fade-up" data-aos-delay="400">
                     <div
-                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
+                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="mb-2 font-bold text-green-600">Step 4</div>
+                    <div class="mb-2 font-bold text-primary">Step 4</div>
                     <h3 class="text-xl font-bold mb-3">Training</h3>
                     <p class="text-slate-600">
                         Train your team to manage and track leads effectively.
@@ -340,10 +261,10 @@
                 <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-100"
                     data-aos="fade-up" data-aos-delay="500">
                     <div
-                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
+                        class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <div class="mb-2 font-bold text-orange-600">Step 5</div>
+                    <div class="mb-2 font-bold text-primary">Step 5</div>
                     <h3 class="text-xl font-bold mb-3">Optimization</h3>
                     <p class="text-slate-600">
                         Continuously refine workflows for higher conversion.
@@ -372,7 +293,7 @@
                     data-aos-delay="100">
                     <div class="flex items-start gap-4">
                         <div
-                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                            class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
@@ -390,7 +311,7 @@
                     data-aos-delay="200">
                     <div class="flex items-start gap-4">
                         <div
-                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                            class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
@@ -407,7 +328,7 @@
                     data-aos-delay="300">
                     <div class="flex items-start gap-4">
                         <div
-                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                            class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
@@ -424,7 +345,7 @@
                     data-aos-delay="400">
                     <div class="flex items-start gap-4">
                         <div
-                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                            class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
@@ -441,7 +362,7 @@
                     data-aos-delay="500">
                     <div class="flex items-start gap-4">
                         <div
-                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                            class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
@@ -458,7 +379,7 @@
                     data-aos-delay="600">
                     <div class="flex items-start gap-4">
                         <div
-                            class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                            class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
@@ -473,7 +394,7 @@
         </div>
     </section>
 
-    <!-- 🟦 Section 6: Case Studies / Results -->
+    <!-- 🟩 Section 6: Case Studies / Results -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -490,7 +411,7 @@
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100"
                     data-aos="fade-up" data-aos-delay="100">
                     <div
-                        class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white">
+                        class="h-48 bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white">
                         <div class="text-center p-6">
                             <div class="text-4xl font-bold mb-2">70%</div>
                             <div class="text-xl font-medium">Faster Response</div>
@@ -501,8 +422,8 @@
                         <p class="text-slate-600 mb-4">Reduced lead response time by 70% and increased follow-ups by 40%
                             with automated CRM workflows.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-[#4361EE]">CRM Integration</span>
-                            <a href="#" class="text-sm font-medium hover:text-[#7209B7] transition-colors">View Details
+                            <span class="text-sm font-medium text-primary">CRM Integration</span>
+                            <a href="#" class="text-sm font-medium hover:text-accent transition-colors">View Details
                                 →</a>
                         </div>
                     </div>
@@ -512,7 +433,7 @@
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100"
                     data-aos="fade-up" data-aos-delay="200">
                     <div
-                        class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white">
+                        class="h-48 bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white">
                         <div class="text-center p-6">
                             <div class="text-4xl font-bold mb-2">1,500+</div>
                             <div class="text-xl font-medium">Inquiries Handled</div>
@@ -523,8 +444,8 @@
                         <p class="text-slate-600 mb-4">Handled 1,500+ inquiries in first month, converting 120 leads to
                             site visits with 24/7 AI responses.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-[#4361EE]">AI Chatbot</span>
-                            <a href="#" class="text-sm font-medium hover:text-[#7209B7] transition-colors">View Details
+                            <span class="text-sm font-medium text-primary">AI Chatbot</span>
+                            <a href="#" class="text-sm font-medium hover:text-accent transition-colors">View Details
                                 →</a>
                         </div>
                     </div>
@@ -534,7 +455,7 @@
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover border border-slate-100"
                     data-aos="fade-up" data-aos-delay="300">
                     <div
-                        class="h-48 bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-white">
+                        class="h-48 bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white">
                         <div class="text-center p-6">
                             <div class="text-4xl font-bold mb-2">20+</div>
                             <div class="text-xl font-medium">Hours Saved Weekly</div>
@@ -545,8 +466,8 @@
                         <p class="text-slate-600 mb-4">Saved client 20+ hours per week in manual follow-up work with
                             automated lead nurturing sequences.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-[#4361EE]">Workflow Automation</span>
-                            <a href="#" class="text-sm font-medium hover:text-[#7209B7] transition-colors">View Details
+                            <span class="text-sm font-medium text-primary">Workflow Automation</span>
+                            <a href="#" class="text-sm font-medium hover:text-accent transition-colors">View Details
                                 →</a>
                         </div>
                     </div>
@@ -555,7 +476,7 @@
 
             <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
                 <a href="#"
-                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#4361EE] to-[#7209B7] text-white font-semibold shadow-lg hover:shadow-xl transition-all neon-glow">
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all neon-glow">
                     <i class="fas fa-chart-bar"></i>
                     View All Case Studies
                 </a>
@@ -563,10 +484,10 @@
         </div>
     </section>
 
-    <!-- 🟧 Section 7: Call to Action -->
+    <!-- 🟩 Section 7: Call to Action -->
     <section id="contact" class="py-20 relative overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-purple-900 opacity-95"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-primary to-black opacity-95"></div>
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Modern technology interface with data visualization" class="w-full h-full object-cover" />
         </div>
@@ -586,13 +507,13 @@
                         <div>
                             <label class="block text-slate-700 text-sm font-medium mb-2 text-left">Your Name</label>
                             <input type="text"
-                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#4361EE] focus:ring-2 focus:ring-[#4361EE]/20 transition-all"
+                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                                 placeholder="John Doe">
                         </div>
                         <div>
                             <label class="block text-slate-700 text-sm font-medium mb-2 text-left">Email Address</label>
                             <input type="email"
-                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#4361EE] focus:ring-2 focus:ring-[#4361EE]/20 transition-all"
+                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                                 placeholder="john@example.com">
                         </div>
                     </div>
@@ -600,13 +521,13 @@
                         <div>
                             <label class="block text-slate-700 text-sm font-medium mb-2 text-left">Phone Number</label>
                             <input type="tel"
-                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#4361EE] focus:ring-2 focus:ring-[#4361EE]/20 transition-all"
+                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                                 placeholder="+1 (555) 000-0000">
                         </div>
                         <div>
                             <label class="block text-slate-700 text-sm font-medium mb-2 text-left">Company</label>
                             <input type="text"
-                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#4361EE] focus:ring-2 focus:ring-[#4361EE]/20 transition-all"
+                                class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                                 placeholder="Your Real Estate Company">
                         </div>
                     </div>
@@ -614,7 +535,7 @@
                         <label class="block text-slate-700 text-sm font-medium mb-2 text-left">What automation solutions
                             interest you?</label>
                         <select
-                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#4361EE] focus:ring-2 focus:ring-[#4361EE]/20 transition-all">
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
                             <option>AI Chat Agents & Lead Assistants</option>
                             <option>Lead Nurturing Automations</option>
                             <option>Real Estate CRM Integration</option>
@@ -627,11 +548,11 @@
                         <label class="block text-slate-700 text-sm font-medium mb-2 text-left">Tell us about your
                             current lead management</label>
                         <textarea rows="4"
-                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#4361EE] focus:ring-2 focus:ring-[#4361EE]/20 transition-all"
+                            class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                             placeholder="Describe your current process and challenges..."></textarea>
                     </div>
                     <button type="submit"
-                        class="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-[#4361EE] to-[#7209B7] text-white font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 neon-glow">
+                        class="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 neon-glow">
                         <i class="fas fa-robot"></i>
                         Request an Automation Consultation
                     </button>

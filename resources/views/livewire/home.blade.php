@@ -1,5 +1,4 @@
 <div>
-
     <!-- Hero with Video Background -->
     <section class="relative h-screen flex items-center justify-center text-white overflow-hidden video-bg">
         <video autoplay muted loop class="w-full h-full object-cover">

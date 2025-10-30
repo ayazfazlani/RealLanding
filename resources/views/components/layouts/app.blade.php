@@ -16,29 +16,30 @@
 
   <script>
     // Tailwind config tweaks
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#FF4D6D",
-              accent: "#6C63FF",
-              soft: "#F6F7FB",
-            },
-            boxShadow: {
-              "soft-lg": "0 10px 30px rgba(16,24,40,0.08)",
-            },
-            keyframes: {
-              float: {
-                "0%,100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-6px)" },
-              },
-            },
-            animation: {
-              float: "float 4s ease-in-out infinite",
-            },
-          },
+
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#01BF60",
+        accent: "#01BF60",
+        soft: "#F6F7FB",
+      },
+      boxShadow: {
+        "soft-lg": "0 10px 30px rgba(16,24,40,0.08)",
+      },
+      keyframes: {
+        float: {
+          "0%,100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
         },
-      };
+      },
+      animation: {
+        float: "float 4s ease-in-out infinite",
+      },
+    },
+  },
+};
   </script>
 
   <style>
@@ -76,7 +77,7 @@
     }
 
     .active-filter {
-      background: linear-gradient(to right, #ff4d6d, #6c63ff);
+      background: linear-gradient(to right, #01BF60, #01BF60);
       color: white;
     }
 
@@ -90,9 +91,8 @@
     /* Outline / secondary button used site-wide */
     .btn-secondary {
       background: transparent;
-      border: 2px solid rgba(59, 130, 246, 1);
-      /* adjust color to your primary */
-      color: rgba(59, 130, 246, 1);
+      border: 2px solid #01BF60;
+      color: #01BF60;
       padding: 0.75rem 1.5rem;
       border-radius: 0.5rem;
       font-weight: 500;
@@ -101,9 +101,9 @@
     }
 
     .btn-secondary:hover {
-      background: rgba(59, 130, 246, 0.06);
+      background: rgba(1, 191, 96, 0.06);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.06);
+      box-shadow: 0 8px 24px rgba(1, 191, 96, 0.06);
     }
 
     .btn-secondary:active {
@@ -182,8 +182,8 @@
   {{ $slot }}
 
   <!-- Contact / Footer -->
-  <footer id="contact" class="bg-white border-t border-slate-100">
-    <div class="max-w-7xl mx-auto px-6 lg:px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-2">
+  <footer id="contact" class="bg-white p-8 border-t border-slate-100 align-between">
+    <div class="max-w-7xl mx-auto px-6 lg:px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-6">
       <div>
         <div class="flex items-center gap-3">
           <img class="h-14" src="{{ asset('assets/logo/reallanding-marketing-agency.png') }}" alt="">
@@ -207,13 +207,14 @@
               class="sr-only">Instagram</span></a>
         </div>
       </div>
-      <div>
-        <h4 class="font-semibold">Company</h4>
+      <div class="flex flex-col">
+        <h4 class="font-semibold">Services</h4>
         <ul class="mt-4 space-y-3 text-sm text-slate-500">
-          <li><a href="{{ route('home') }}">home</a></li>
-          <li><a href="{{ route('about') }}">about</a></li>
-          <li><a href="{{ route('services') }}">services</a></li>
-          <li><a href="{{ route('contact') }}">contact</a></li>
+          <li><a href="{{ route('website.development') }}">Web Development</a></li>
+          <li><a href="{{ route('social.media') }}">Social Media Marketing</a></li>
+          <li><a href="{{ route('seo') }}">SEO Services</a></li>
+          <li><a href="{{ route('lead.generation') }}">Lead Generation</a></li>
+          <li><a href="{{ route('paid.advertising') }}">Paid Ads</a></li>
         </ul>
       </div>
 
