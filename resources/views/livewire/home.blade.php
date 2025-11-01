@@ -126,20 +126,23 @@
                 $services = [
                 [
                 'icon' => 'fas fa-laptop-code',
+                'link' => 'website.development',
                 'title' => 'Web Design Services',
                 'description' => 'Get AI-powered web design services tailored to your needs to create websites that
                 offer enhanced user experience.',
                 'gradient' => 'from-primary to-accent'
                 ],
                 [
-                'icon' => 'fas fa-code',
-                'title' => 'Web Development Services',
-                'description' => 'Get custom web development services powered by AI to create responsive, scalable, and
-                user-friendly websites.',
+                'icon' => 'fas fa-users',
+                'link' => 'lead.generation',
+                'title' => 'Lead Generation Services',
+                'description' => 'Get custom lead generation services powered by AI to attract and convert high-quality
+                leads.',
                 'gradient' => 'from-accent to-primary'
                 ],
                 [
                 'icon' => 'fas fa-chart-line',
+                'link' => 'paid.advertising',
                 'title' => 'Digital Marketing Services',
                 'description' => 'Reach your ideal audience and boost sales with AI-driven digital marketing services,
                 providing smarter and personalized strategies.',
@@ -147,6 +150,7 @@
                 ],
                 [
                 'icon' => 'fas fa-search',
+                'link' => 'seo',
                 'title' => 'SEO Services',
                 'description' => 'Enhance your website\'s performance with AI-powered SEO services, optimizing your
                 content and driving organic traffic.',
@@ -154,16 +158,18 @@
                 ],
                 [
                 'icon' => 'fas fa-share-alt',
+                'link' => 'social.media',
                 'title' => 'Social Media Services',
                 'description' => 'Leverage AI-driven social media strategies to boost brand awareness and drive
                 conversions through tailored campaigns.',
                 'gradient' => 'from-primary to-accent'
                 ],
                 [
-                'icon' => 'fas fa-ad',
-                'title' => 'PPC Services',
-                'description' => 'Maximize ROI with AI-powered PPC campaigns targeting the right audience and driving
-                high-converting traffic to your website.',
+                'icon' => 'fas fa-robot',
+                'link' => 'automation',
+                'title' => 'Automation Services',
+                'description' => 'Streamline your marketing efforts with AI-powered automation services, enhancing
+                efficiency and effectiveness.',
                 'gradient' => 'from-accent to-primary'
                 ]
                 ];
@@ -183,7 +189,7 @@
                                 {{ $service['description'] }}
                             </p>
                             <div class="mt-6">
-                                <a href="#{{ Str::slug($service['title']) }}"
+                                <a href="{{ route($service['link']) }}"
                                     class="p-2 rounded-lg bg-gradient-to-r  from-primary to-accent text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
                                     Learn More
                                 </a>
