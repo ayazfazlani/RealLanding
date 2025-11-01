@@ -5,7 +5,7 @@
             <!-- Logo -->
             <a href="{{ route('home') }}" class="flex items-center gap-3">
                 {{-- <div
-                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold shadow">
+                    class="w-10 h-10 rounded-xl bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white font-bold shadow">
                     A
                 </div> --}}
                 <div>
@@ -15,11 +15,11 @@
 
             <!-- Desktop nav -->
             <nav class="hidden md:flex items-center gap-6">
-                <a href="{{ route('home') }}" class="text-sm hover:text-slate-900">Home</a>
+                <a href="{{ route('home') }}" class="text-sm hover:text-slate-900 hover:scale-105">Home</a>
                 <!-- Services dropdown -->
                 <div class="relative" @click.away="servicesOpen = false">
                     <button type="button" @click="servicesOpen = !servicesOpen"
-                        class="text-sm flex items-center gap-1 hover:text-slate-900 focus:outline-none">
+                        class="text-sm flex items-center gap-1 hover:text-slate-900 focus:outline-none hover:scale-105">
                         Services
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-4 h-4 transform transition-transform duration-200"
@@ -33,28 +33,34 @@
                     <div x-show="servicesOpen" x-transition.origin.top.left
                         class="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-md py-2 ring-1 ring-slate-100 z-50">
                         <a href="{{ route('website.development') }}"
-                            class="block px-4 py-2 text-sm hover:bg-slate-50">Web Development</a>
-                        <a href="{{ route('social.media') }}" class="block px-4 py-2 text-sm hover:bg-slate-50">Social
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Web Development</a>
+                        <a href="{{ route('social.media') }}"
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Social
                             Media Management</a>
-                        <a href="{{ route('seo') }}" class="block px-4 py-2 text-sm hover:bg-slate-50">SEO Services</a>
-                        <a href="{{ route('automation') }}" class="block px-4 py-2 text-sm hover:bg-slate-50">Creative
+                        <a href="{{ route('seo') }}"
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">SEO Services</a>
+                        <a href="{{ route('automation') }}"
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Creative
                             Automation</a>
                         <a href="{{ route('creative.content') }}"
-                            class="block px-4 py-2 text-sm hover:bg-slate-50">Consulting</a>
-                        <a href="{{ route('lead.generation') }}" class="block px-4 py-2 text-sm hover:bg-slate-50">Lead
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Consulting</a>
+                        <a href="{{ route('lead.generation') }}"
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Lead
                             Generation</a>
-                        <a href="{{ route('paid.advertising') }}" class="block px-4 py-2 text-sm hover:bg-slate-50">Paid
+                        <a href="{{ route('paid.advertising') }}"
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Paid
                             Ads</a>
                         <a href="{{ route('creative.contentservices') }}"
-                            class="block px-4 py-2 text-sm hover:bg-slate-50">Creative
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Creative
                             Content</a>
                     </div>
                 </div>
-                <a href="{{ route('about') }}" class="text-sm hover:text-slate-900">About Us</a>
+                <a href="{{ route('about') }}" class="text-sm hover:text-slate-900 hover:scale-105">About Us</a>
 
-                <a href="{{ route('contact') }}" class="text-sm hover:text-slate-900">Contact</a>
+                <a href="{{ route('contact') }}" class="text-sm hover:text-slate-900 hover:scale-105">Contact</a>
                 <a href="{{ route('contact') }}"
-                    class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white text-sm shadow-sm">
+                    class="ml-4 inline-flex items-center gap-2 px-4 py-2 font-md rounded-lg bg-gradient-to-r from-primary/90 
+                    to-primary text-white text-md shadow-sm hover:from-primary/70 hover:to-primary hover:shadow-md transition hover:scale-105">
                     Get Started
                 </a>
             </nav>
@@ -103,7 +109,7 @@
             </details>
 
             <a href="{{ route('contact') }}"
-                class="mt-3 inline-block w-full text-center px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white">
+                class="mt-3 inline-block w-full text-bold text-center px-4 py-2 rounded-lg bg-gradient-to-r from-primary/80 to-black/90 text-white hover:from-primary to-accent shadow-sm">
                 Get Started
             </a>
         </div>

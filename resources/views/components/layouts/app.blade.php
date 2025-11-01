@@ -11,7 +11,11 @@
   {{--
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> --}}
   <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   @livewireStyles
 
   <script>
@@ -140,7 +144,7 @@ tailwind.config = {
           <a href="#pricing" class="text-sm hover:text-slate-900">Pricing</a>
           <a href="#contact" class="text-sm hover:text-slate-900">Contact</a>
           <a href="#"
-            class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white text-sm shadow-sm">Get
+            class="ml-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r  from-primary to-accent text-white text-sm shadow-sm">Get
             Started</a>
         </nav>
 
@@ -171,7 +175,7 @@ tailwind.config = {
         <a href="#pricing" class="block py-2">Pricing</a>
         <a href="#contact" class="block py-2">Contact</a>
         <a href="#"
-          class="mt-3 inline-block w-full text-center px-4 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white">Get
+          class="mt-3 inline-block w-full text-center px-4 py-2 rounded-lg bg-gradient-to-r  from-primary to-accent text-white">Get
           Started</a>
       </div>
     </div>
@@ -182,8 +186,8 @@ tailwind.config = {
   {{ $slot }}
 
   <!-- Contact / Footer -->
-  <footer id="contact" class="bg-white p-8 border-t border-slate-100 align-between">
-    <div class="max-w-7xl mx-auto px-6 lg:px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+  <footer id="contact" class="bg-white p-4 lg:p-8 border-t border-slate-100 align-between ">
+    <div class="max-w-7xl mx-auto  lg:px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-6">
       <div>
         <div class="flex items-center gap-3">
           <img class="h-14" src="{{ asset('assets/logo/reallanding-marketing-agency.png') }}" alt="">
@@ -197,24 +201,29 @@ tailwind.config = {
           <a href="https://www.facebook.com/RealLanding1
 " class="text-slate-400 hover:text-slate-600">
             <i class="fab fa-facebook-f"></i>
-            <span class="sr-only">Facebook</span>
+            <span class="sr-only hover:scale-105">Facebook</span>
           </a>
           <a href=" https://www.linkedin.com/company/real-landing/posts/ "
             class="text-slate-400 hover:text-slate-600"><i class="fab fa-linkedin"></i> <span
               class="sr-only">LinkedIn</span></a>
           <a href="https://www.instagram.com/real.landing/
 " class="text-slate-400 hover:text-slate-600"><i class="fab fa-instagram"></i> <span
-              class="sr-only">Instagram</span></a>
+              class="sr-only hover:scale-105">Instagram</span></a>
         </div>
       </div>
       <div class="flex flex-col">
         <h4 class="font-semibold">Services</h4>
         <ul class="mt-4 space-y-3 text-sm text-slate-500">
-          <li><a href="{{ route('website.development') }}">Web Development</a></li>
-          <li><a href="{{ route('social.media') }}">Social Media Marketing</a></li>
-          <li><a href="{{ route('seo') }}">SEO Services</a></li>
-          <li><a href="{{ route('lead.generation') }}">Lead Generation</a></li>
-          <li><a href="{{ route('paid.advertising') }}">Paid Ads</a></li>
+          <li class="hover:scale-1.5 transition-transform duration-150"><a href="{{ route('website.development') }}">Web
+              Development</a></li>
+          <li class="hover:scale-104 transition-transform duration-150"><a href="{{ route('social.media') }}">Social
+              Media Marketing</a></li>
+          <li class="hover:scale-104 transition-transform duration-150"><a href="{{ route('seo') }}">SEO Services</a>
+          </li>
+          <li class="hover:scale-104 transition-transform duration-150"><a href="{{ route('lead.generation') }}">Lead
+              Generation</a></li>
+          <li class="hover:scale-104 transition-transform duration-150"><a href="{{ route('paid.advertising') }}">Paid
+              Ads</a></li>
         </ul>
       </div>
 
@@ -236,7 +245,7 @@ tailwind.config = {
           <div>
             <input class="flex-1  w-full rounded-lg border border-slate-200 p-3 my-3 text-sm"
               placeholder="Your email" />
-            <button class="px-4 py-2 rounded-lg bg-accent text-white">
+            <button class="px-4 py-2 rounded-lg bg-accent text-white hover:scale-105 transition-transform duration-150">
               Subscribe
             </button>
           </div>
@@ -253,7 +262,7 @@ tailwind.config = {
           © <span id="year"></span> ModernAgency. All rights reserved.
         </div>
         <div class="mt-3 md:mt-0">
-          Made with ♥ — <span class="font-medium">Tailwind CSS</span>
+          Made with ♥ — <span class="font-medium">RealLanding</span>
         </div>
       </div>
     </div>
@@ -380,6 +389,186 @@ tailwind.config = {
       const style = document.createElement("style");
       style.innerHTML = `@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} .animate-fadeIn{animation:fadeIn .7s ease forwards}`;
       document.head.appendChild(style);
+  </script>
+
+  <script>
+    // Initialize AOS
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize MixItUp with proper configuration
+        var apimsMixer = mixitup('#apims-portfolio-container', {
+            selectors: {
+                target: '.apims-portfolio-item'
+            },
+            animation: {
+                duration: 400,
+                effects: 'fade scale(0.9)',
+                easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
+            },
+            load: {
+                filter: 'all'
+            }
+        });
+
+        // Update active filter button styling
+        document.querySelectorAll('.apims-filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.apims-filter-btn').forEach(b => {
+                    b.classList.remove('apims-active-filter', 'bg-primary', 'text-white');
+                    b.classList.add('bg-gray-200');
+                });
+                this.classList.remove('bg-gray-200');
+                this.classList.add('apims-active-filter', 'bg-primary', 'text-white');
+            });
+        });
+
+        // Testimonial Carousel - Fixed Version
+        let apimsCurrentSlide = 0;
+        const apimsSlides = document.getElementById('apims-testimonial-slides');
+        const apimsDots = document.querySelectorAll('.apims-testimonial-dot');
+        const apimsTotalSlides = document.querySelectorAll('#apims-testimonial-slides > div').length;
+        
+        // Set initial slide width
+        if (apimsSlides) {
+            apimsSlides.style.width = `${apimsTotalSlides * 100}%`;
+            document.querySelectorAll('#apims-testimonial-slides > div').forEach(slide => {
+                slide.style.width = `${100 / apimsTotalSlides}%`;
+            });
+        }
+
+        function apimsUpdateCarousel() {
+            if (!apimsSlides) return;
+            
+            const translateX = -apimsCurrentSlide * (100 / apimsTotalSlides);
+            apimsSlides.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dots
+            apimsDots.forEach((dot, index) => {
+                if (index === apimsCurrentSlide) {
+                    dot.classList.add('apims-active-dot', 'bg-primary');
+                    dot.classList.remove('bg-slate-300');
+                } else {
+                    dot.classList.remove('apims-active-dot', 'bg-primary');
+                    dot.classList.add('bg-slate-300');
+                }
+            });
+        }
+
+        // Dot click events
+        apimsDots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                apimsCurrentSlide = parseInt(this.getAttribute('data-index'));
+                apimsUpdateCarousel();
+            });
+        });
+
+        // Navigation arrows
+        document.getElementById('apims-prev-btn')?.addEventListener('click', function() {
+            apimsCurrentSlide = (apimsCurrentSlide - 1 + apimsTotalSlides) % apimsTotalSlides;
+            apimsUpdateCarousel();
+        });
+
+        document.getElementById('apims-next-btn')?.addEventListener('click', function() {
+            apimsCurrentSlide = (apimsCurrentSlide + 1) % apimsTotalSlides;
+            apimsUpdateCarousel();
+        });
+
+        // Auto slide
+        let apimsAutoSlideInterval = setInterval(() => {
+            apimsCurrentSlide = (apimsCurrentSlide + 1) % apimsTotalSlides;
+            apimsUpdateCarousel();
+        }, 5000);
+
+        // Pause auto-slide on hover
+        const apimsCarousel = document.getElementById('apims-testimonial-carousel');
+        if (apimsCarousel) {
+            apimsCarousel.addEventListener('mouseenter', () => clearInterval(apimsAutoSlideInterval));
+            apimsCarousel.addEventListener('mouseleave', () => {
+                apimsAutoSlideInterval = setInterval(() => {
+                    apimsCurrentSlide = (apimsCurrentSlide + 1) % apimsTotalSlides;
+                    apimsUpdateCarousel();
+                }, 5000);
+            });
+        }
+
+        // Initialize carousel
+        apimsUpdateCarousel();
+
+        // FAQ Accordion
+        document.querySelectorAll('.apims-faq-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('span');
+                
+                // Toggle current FAQ
+                const isHidden = content.classList.toggle('hidden');
+                icon.textContent = isHidden ? '+' : '−';
+                icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+                
+                // Close other FAQs
+                document.querySelectorAll('.apims-faq-content').forEach(otherContent => {
+                    if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                        otherContent.classList.add('hidden');
+                        const otherIcon = otherContent.previousElementSibling.querySelector('span');
+                        otherIcon.textContent = '+';
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+
+        // Count Up Animation - Fixed Version
+        function apimsStartCountUp() {
+            const counters = document.querySelectorAll('.apims-counter');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const suffix = counter.getAttribute('data-suffix');
+                let count = 0;
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                
+                // Reset counter
+                counter.textContent = '0' + suffix;
+
+                const updateCount = () => {
+                    count += increment;
+                    
+                    if (count < target) {
+                        counter.textContent = Math.ceil(count) + suffix;
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.textContent = target + suffix;
+                    }
+                };
+
+                updateCount();
+            });
+        }
+
+        // Intersection Observer for count-up animation
+        const apimsStatsSection = document.querySelector('.bg-soft');
+        if (apimsStatsSection) {
+            const apimsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        apimsStartCountUp();
+                        apimsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            });
+
+            apimsObserver.observe(apimsStatsSection);
+        }
+    });
   </script>
 </body>
 

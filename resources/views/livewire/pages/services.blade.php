@@ -2,7 +2,7 @@
     <!-- 🟩 Hero Section -->
     <section class="relative py-20 lg:py-28 bg-gradient-to-br from-black to-gray-900 overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-10">
-            <div class="absolute inset-0 bg-gradient-to-r fbg-gradient-to-r from-primary/90 to-black/80 "></div>
+            <div class="absolute inset-0 bg-gradient-to-r  fbg-gradient-to-r  from-primary/90 to-black/80 "></div>
             <div
                 class="absolute top-0 left-0 w-72 h-72 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse">
             </div>
@@ -28,7 +28,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
                 <a href="#services"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-rocket"></i>
                     Explore Our Services
                 </a>
@@ -509,7 +509,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
                 <a href="contact.html"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-calendar-check"></i>
                     Book a Free Consultation
                 </a>

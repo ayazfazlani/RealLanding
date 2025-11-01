@@ -2,7 +2,7 @@
     <!-- 🟩 Hero Section -->
     <section class="relative py-20 lg:py-28 bg-gradient-to-br from-black to-gray-900 overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-10">
-            <div class="absolute inset-0 bg-gradient-to-r from-green-600/20 to-green-800/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-r  from-green-600/20 to-green-800/20"></div>
             <div
                 class="absolute top-0 left-0 w-72 h-72 bg-green-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse">
             </div>
@@ -31,7 +31,7 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="400">
                         <a href="#story"
-                            class="px-8 py-4 rounded-xl bg-gradient-to-r from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
+                            class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                             <i class="fas fa-history"></i>
                             Our Story
                         </a>
@@ -244,7 +244,7 @@
     </section>
 
     <!-- 🟩 Our Team -->
-    <section id="team" class="py-20 bg-white">
+    {{-- <section id="team" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">
@@ -361,7 +361,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- 🟩 Why Choose Us -->
     <section class="py-20 bg-gradient-to-br from-black to-gray-900 text-white">
@@ -433,7 +433,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
                 <a href="contact.html"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-calendar-check"></i>
                     Schedule a Consultation
                 </a>

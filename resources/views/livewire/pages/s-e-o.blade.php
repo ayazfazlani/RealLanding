@@ -4,7 +4,7 @@
     <!-- 🟩 Section 1: Hero Banner -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-black/80 z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r  from-primary/90 to-black/80 z-10"></div>
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="SEO analytics dashboard" class="w-full h-full object-cover" />
         </div>
@@ -27,7 +27,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
                 <a href="#contact"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-chart-line"></i>
                     Get a Free SEO Audit
                 </a>
@@ -475,7 +475,7 @@
     </section>
 
     <!-- 🟩 Section 7: Call to Action (CTA) -->
-    <section class="py-20 bg-gradient-to-r from-primary to-black relative overflow-hidden">
+    <section class="py-20 bg-gradient-to-r  from-primary to-black relative overflow-hidden">
         <!-- Background elements -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
             <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full"></div>

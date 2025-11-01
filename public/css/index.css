@@ -1,0 +1,233 @@
+:root {
+  --primary: #01BF60;
+  --accent: #01BF60;
+  --soft: #f8fafc;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-soft {
+  background-color: var(--soft);
+}
+
+.card-border {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.video-bg {
+  position: relative;
+}
+
+.active-filter {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* New theme styles */
+.glow {
+  box-shadow: 0 0 20px rgba(1, 191, 96, 0.25);
+}
+
+.bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contact-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-left: 4px solid transparent;
+}
+
+.contact-card:hover {
+  border-left-color: var(--primary);
+  transform: translateX(8px);
+}
+
+.form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(1, 191, 96, 0.12);
+}
+
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary) 0%, #000000 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.process-step {
+  position: relative;
+}
+
+.process-step:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 40px;
+  height: 2px;
+  background: #E2E8F0;
+  z-index: 1;
+}
+
+.floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #E2E8F0, transparent);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.creative-bg {
+  background: linear-gradient(135deg, var(--primary) 0%, #e6fff3 100%);
+}
+
+.service-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Theme overrides */
+.bg-\[\#FDFDFC\],
+.bg-\[\#fff2f2\],
+.bg-\[\#dbdbd7\],
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+
+.bg-\[\#1b1b18\],
+.bg-\[\#1D0002\],
+.dark\:bg-\[\#161615\],
+.dark\:bg-\[\#0a0a0a\] {
+  background-color: var(--color-black) !important;
+}
+
+.text-\[\#1b1b18\],
+.text-\[\#706f6c\] {
+  color: var(--color-black) !important;
+}
+
+.text-\[\#f53003\],
+.text-\[\#F53003\],
+.text-\[\#F61500\],
+.text-\[\#FF4433\],
+.text-\[\#f43\],
+.text-\[\#F53003\] {
+  color: var(--primary) !important;
+}
+
+.dark\:text-\[\#EDEDEC\],
+.text-white {
+  color: var(--color-white) !important;
+}
+
+.border-\[\#19140035\],
+.border-\[\#e3e3e0\] {
+  border-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+.border-black {
+  border-color: var(--color-black) !important;
+}
+
+.hover\:bg-black:hover,
+.hover\:border-black:hover {
+  background-color: var(--color-black) !important;
+  border-color: var(--color-black) !important;
+}
+
+.inline-block.bg-\[\#1b1b18\],
+.inline-block.bg-black {
+  background-color: var(--color-black) !important;
+  color: var(--color-white) !important;
+}
+
+.inline-block.bg-\[\#1b1b18\].text-white,
+.inline-block.bg-black.text-white {
+  color: var(--color-white) !important;
+}

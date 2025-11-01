@@ -4,7 +4,7 @@
     <!-- 🟩 Section 1: Hero Banner -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-black/80 z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r  from-primary/90 to-black/80 z-10"></div>
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="AI chatbot interface and CRM dashboard" class="w-full h-full object-cover" />
         </div>
@@ -27,7 +27,7 @@
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
                 <a href="#contact"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2 neon-glow">
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2 neon-glow">
                     <i class="fas fa-robot"></i>
                     Book a Free Automation Demo
                 </a>
@@ -476,7 +476,7 @@
 
             <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
                 <a href="#"
-                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all neon-glow">
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all neon-glow">
                     <i class="fas fa-chart-bar"></i>
                     View All Case Studies
                 </a>
@@ -552,7 +552,7 @@
                             placeholder="Describe your current process and challenges..."></textarea>
                     </div>
                     <button type="submit"
-                        class="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 neon-glow">
+                        class="w-full px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 neon-glow">
                         <i class="fas fa-robot"></i>
                         Request an Automation Consultation
                     </button>
