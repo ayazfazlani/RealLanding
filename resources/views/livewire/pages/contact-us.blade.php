@@ -337,7 +337,7 @@
 
                 <!-- Contact Info & Map -->
                 <div data-aos="fade-left">
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact Reallanding</h2>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact RealLanding</h2>
 
                     <!-- Contact Details -->
                     <div class="space-y-6 mb-8">

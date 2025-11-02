@@ -432,12 +432,13 @@
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <a href="contact.html"
+                <a href="{{ route('contact') }}"
                     class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-calendar-check"></i>
                     Schedule a Consultation
                 </a>
-                <a href="case-studies.html"
+                {{-- home then the portfolio --}}
+                <a href="{{ route('home') }}#portfolio"
                     class="px-8 py-4 rounded-xl bg-white text-gray-700 font-medium border border-gray-200 hover:border-gray-300 transition-all flex items-center gap-2">
                     <i class="fas fa-chart-bar"></i>
                     View Our Work

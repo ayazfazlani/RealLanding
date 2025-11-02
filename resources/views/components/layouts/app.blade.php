@@ -259,7 +259,7 @@ tailwind.config = {
     <div class="border-t border-slate-100">
       <div class="max-w-7xl mx-auto px-6 lg:px-8 py-6 text-sm text-slate-400 flex flex-col md:flex-row justify-between">
         <div>
-          © <span id="year"></span> ModernAgency. All rights reserved.
+          © <span id="year"></span> RealLanding. All rights reserved.
         </div>
         <div class="mt-3 md:mt-0">
           Made with ♥ — <span class="font-medium">RealLanding</span>
