@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Modern Agency — Tailwind Landing</title>
+  {{-- livewire dynamic title --}}
+  <title>{{ $title ?? 'Real Landing - Marketing Agency'}}</title>
   <meta name="description" content="Professional modern landing page built with Tailwind CSS" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/index.css" />
@@ -231,8 +232,8 @@ tailwind.config = {
         <h4 class="font-semibold">Contact</h4>
         <ul class="mt-4 space-y-3 text-sm text-slate-500">
           <li>123 Business St, Lahore, Pakistan</li>
-          <li>+92 300 0000000</li>
-          <li>hello@modernagency.com</li>
+          <li>+923186230122</li>
+          <li>info@reallanding.com</li>
         </ul>
       </div>
 
@@ -257,12 +258,12 @@ tailwind.config = {
     </div>
 
     <div class="border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-6 text-sm text-slate-400 flex flex-col md:flex-row justify-between">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 text-sm text-slate-400 flex flex-col md:flex-row justify-between">
         <div>
-          © <span id="year"></span> RealLanding. All rights reserved.
+          © <span id="year"></span> Real Landing. All rights reserved.
         </div>
         <div class="mt-3 md:mt-0">
-          Made with ♥ — <span class="font-medium">RealLanding</span>
+          Made with ♥ — <span class="font-medium">Real Landing</span>
         </div>
       </div>
     </div>
@@ -271,129 +272,11 @@ tailwind.config = {
   @livewireScripts
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Scripts: mobile menu + carousel + reveal animations -->
-  <script>
-    document.getElementById("year").innerText = new Date().getFullYear();
 
-      // Mobile menu toggle
-      const mobileBtn = document.getElementById("mobileBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const menuIcon = document.getElementById("menuIcon");
-      const closeIcon = document.getElementById("closeIcon");
-      let open = false;
-      mobileBtn.addEventListener("click", () => {
-        open = !open;
-        if (open) {
-          mobileMenu.classList.remove(
-            "-translate-y-1/2",
-            "opacity-0",
-            "pointer-events-none"
-          );
-          mobileMenu.classList.add("translate-y-0", "opacity-100");
-          menuIcon.classList.add("hidden");
-          closeIcon.classList.remove("hidden");
-        } else {
-          mobileMenu.classList.add(
-            "-translate-y-1/2",
-            "opacity-0",
-            "pointer-events-none"
-          );
-          mobileMenu.classList.remove("translate-y-0", "opacity-100");
-          menuIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
-        }
-      });
-
-      // Simple testimonial carousel
-      const slides = document.getElementById("slides");
-      const dots = document.querySelectorAll(".dot");
-      let idx = 0;
-      function goTo(i) {
-        idx = i % 3;
-        slides.style.transform = `translateX(-${(idx * 100) / 3}%)`;
-        dots.forEach(
-          (d, di) =>
-            (d.style.backgroundColor = di === idx ? "#FF4D6D" : "#CBD5E1")
-        );
-      }
-      dots.forEach((d, i) => d.addEventListener("click", () => goTo(i)));
-      // init dots
-      dots.forEach(
-        (d, di) => (d.style.backgroundColor = di === 0 ? "#FF4D6D" : "#CBD5E1")
-      );
-      // auto rotate
-      setInterval(() => {
-        goTo((idx + 1) % 3);
-      }, 5000);
-
-      // Reveal on scroll
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("animate-fadeIn");
-              entry.target.style.opacity = 1;
-              io.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.12 }
-      );
-      document
-        .querySelectorAll("section, article, .card-border")
-        .forEach((el) => {
-          el.style.opacity = 0;
-          el.classList.add("transition", "duration-700");
-          io.observe(el);
-        });
-
-      AOS.init({ duration: 1000, once: true });
-
-      // MixItUp Init
-      var mixer = mixitup("#mix-container", {
-        animation: {
-          enable: false, // Disable animation when filtering
-        },
-      });
-
-      // Filter button active state
-      document.querySelectorAll(".filter-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          // Remove active class from all buttons
-          document.querySelectorAll(".filter-btn").forEach((b) => {
-            b.classList.remove("active-filter");
-            if (!b.classList.contains("active-filter")) {
-              b.classList.add("bg-gray-200");
-            }
-          });
-
-          // Add active class to clicked button
-          this.classList.add("active-filter");
-          this.classList.remove("bg-gray-200");
-        });
-      });
-
-      // FAQ Toggle
-      document.querySelectorAll(".faq-btn").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const content = btn.nextElementSibling;
-          content.classList.toggle("hidden");
-          btn.querySelector("span").textContent = content.classList.contains(
-            "hidden"
-          )
-            ? "+"
-            : "-";
-        });
-      });
-
-      // tiny css-in-js animation class for fadeIn
-      const style = document.createElement("style");
-      style.innerHTML = `@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} .animate-fadeIn{animation:fadeIn .7s ease forwards}`;
-      document.head.appendChild(style);
-  </script>
 
   <script>
     // Initialize AOS
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('livewire:navigated', function() {
         AOS.init({
             duration: 800,
             once: true,
@@ -569,7 +452,133 @@ tailwind.config = {
             apimsObserver.observe(apimsStatsSection);
         }
     });
+
+
+
+     
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const mobileBtn = document.getElementById("mobileBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIcon = document.getElementById("menuIcon");
+      const closeIcon = document.getElementById("closeIcon");
+      let open = false;
+      mobileBtn.addEventListener("click", () => {
+        open = !open;
+        if (open) {
+          mobileMenu.classList.remove(
+            "-translate-y-1/2",
+            "opacity-0",
+            "pointer-events-none"
+          );
+          mobileMenu.classList.add("translate-y-0", "opacity-100");
+          menuIcon.classList.add("hidden");
+          closeIcon.classList.remove("hidden");
+        } else {
+          mobileMenu.classList.add(
+            "-translate-y-1/2",
+            "opacity-0",
+            "pointer-events-none"
+          );
+          mobileMenu.classList.remove("translate-y-0", "opacity-100");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        }
+      });
+
+      // Simple testimonial carousel
+      const slides = document.getElementById("slides");
+      const dots = document.querySelectorAll(".dot");
+      let idx = 0;
+      function goTo(i) {
+        idx = i % 3;
+        slides.style.transform = `translateX(-${(idx * 100) / 3}%)`;
+        dots.forEach(
+          (d, di) =>
+            (d.style.backgroundColor = di === idx ? "#FF4D6D" : "#CBD5E1")
+        );
+      }
+      dots.forEach((d, i) => d.addEventListener("click", () => goTo(i)));
+      // init dots
+      dots.forEach(
+        (d, di) => (d.style.backgroundColor = di === 0 ? "#FF4D6D" : "#CBD5E1")
+      );
+      // auto rotate
+      setInterval(() => {
+        goTo((idx + 1) % 3);
+      }, 5000);
+
+      // Reveal on scroll
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-fadeIn");
+              entry.target.style.opacity = 1;
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document
+        .querySelectorAll("section, article, .card-border")
+        .forEach((el) => {
+          el.style.opacity = 0;
+          el.classList.add("transition", "duration-700");
+          io.observe(el);
+        });
+
+      AOS.init({ duration: 1000, once: true });
+
+      // MixItUp Init
+      var mixer = mixitup("#mix-container", {
+        animation: {
+          enable: false, // Disable animation when filtering
+        },
+      });
+
+      // Filter button active state
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          // Remove active class from all buttons
+          document.querySelectorAll(".filter-btn").forEach((b) => {
+            b.classList.remove("active-filter");
+            if (!b.classList.contains("active-filter")) {
+              b.classList.add("bg-gray-200");
+            }
+          });
+
+          // Add active class to clicked button
+          this.classList.add("active-filter");
+          this.classList.remove("bg-gray-200");
+        });
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const content = btn.nextElementSibling;
+          content.classList.toggle("hidden");
+          btn.querySelector("span").textContent = content.classList.contains(
+            "hidden"
+          )
+            ? "+"
+            : "-";
+        });
+      });
+
+      // tiny css-in-js animation class for fadeIn
+      const style = document.createElement("style");
+      style.innerHTML = `@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} .animate-fadeIn{animation:fadeIn .7s ease forwards}`;
+      document.head.appendChild(style);
+  
   </script>
+
+
+
+
 </body>
 
 </html>

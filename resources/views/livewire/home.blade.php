@@ -189,7 +189,7 @@
                                 {{ $service['description'] }}
                             </p>
                             <div class="mt-6">
-                                <a href="{{ route($service['link']) }}"
+                                <a href="{{ route($service['link']) }}" wire:navigate
                                     class="p-2 rounded-lg bg-gradient-to-r  from-primary to-accent text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
                                     Learn More
                                 </a>
@@ -747,7 +747,7 @@
                                 </div>
                                 <div>
                                     <div class="text-sm text-white/80">Call Us</div>
-                                    <div class="font-semibold">+1 (555) 123-4567</div>
+                                    <div class="font-semibold">+923186230122</div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
@@ -756,7 +756,7 @@
                                 </div>
                                 <div>
                                     <div class="text-sm text-white/80">Email Us</div>
-                                    <div class="font-semibold">hello@apimstech.com</div>
+                                    <div class="font-semibold">info@reallanding.com</div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-3">
@@ -775,10 +775,10 @@
         </div>
     </section>
 
-    @push('scripts')
-    <script>
+    @push('script')
+    <script data-spa="auto" defer>
         // FAQ Accordion Functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('livewire:navigated', function() {
         // FAQ Accordion
         document.querySelectorAll('.apims-faq-btn').forEach(button => {
             button.addEventListener('click', function() {
@@ -890,7 +890,7 @@
 </div>
 
 @push('script')
-@stack('script')
+
 
 
 

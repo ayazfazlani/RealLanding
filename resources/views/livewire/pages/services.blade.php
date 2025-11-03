@@ -513,7 +513,7 @@
                     <i class="fas fa-calendar-check"></i>
                     Book a Free Consultation
                 </a>
-                <a href="tel:+15551234567"
+                <a href="tel:+923186230122"
                     class="px-8 py-4 rounded-xl bg-white text-gray-700 font-medium border border-gray-200 hover:border-gray-300 transition-all flex items-center gap-2">
                     <i class="fas fa-phone"></i>
                     Call Us Now

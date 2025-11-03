@@ -32,10 +32,10 @@
                     <i class="fas fa-paper-plane"></i>
                     Send Us a Message
                 </a>
-                <a href="tel:+15551234567"
+                <a href="tel:+923186230122"
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-phone"></i>
-                    Call Now: +1 (555) 123-4567
+                    Call Now: +923186230122
                 </a>
             </div>
         </div>
@@ -48,11 +48,11 @@
                 <!-- Left Content -->
                 <div>
                     <h2 class="text-4xl lg:text-5xl font-bold mb-6" data-aos="fade-up">
-                        About <span class="text-gradient">Reallanding</span>
+                        About <span class="text-gradient">Real Landing</span>
                     </h2>
                     <div class="space-y-6 text-lg text-gray-600" data-aos="fade-up" data-aos-delay="200">
                         <p>
-                            Welcome to Reallanding, your trusted partner in real estate marketing excellence.
+                            Welcome to Real Landing, your trusted partner in real estate marketing excellence.
                             We specialize in helping real estate professionals, agencies, and developers grow their
                             brands,
                             generate high-quality leads, and close more deals through powerful digital marketing
@@ -161,15 +161,15 @@
                     <div class="space-y-3">
                         <div class="flex items-center gap-3">
                             <i class="fas fa-phone text-green-600"></i>
-                            <span class="font-medium">+1 (555) 123-4567</span>
+                            <span class="font-medium">+923186230122</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fas fa-clock text-green-600"></i>
                             <span class="font-medium">Mon-Fri: 9AM-6PM EST</span>
                         </div>
                     </div>
-                    <a href="tel:+15551234567"
-                        class="mt-6 inline-flex items-center gap-2 text-green-600 font-medium hover:text-green-800 transition-colors">
+                    <a href="tel:+923186230122
+" class="mt-6 inline-flex items-center gap-2 text-green-600 font-medium hover:text-green-800 transition-colors">
                         Call Now <i class="fas fa-arrow-right text-sm"></i>
                     </a>
                 </div>
@@ -337,7 +337,7 @@
 
                 <!-- Contact Info & Map -->
                 <div data-aos="fade-left">
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact RealLanding</h2>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact Real Landing</h2>
 
                     <!-- Contact Details -->
                     <div class="space-y-6 mb-8">
@@ -429,7 +429,7 @@
                     Frequently Asked <span class="text-gradient">Questions</span>
                 </h2>
                 <p class="text-xl text-gray-600" data-aos="fade-up" data-aos-delay="200">
-                    Quick answers to common questions about working with Reallanding
+                    Quick answers to common questions about working with Real Landing
                 </p>
             </div>
 
@@ -524,7 +524,7 @@
             </h2>
             <p class="text-xl mb-10 leading-relaxed text-gray-300 max-w-2xl mx-auto" data-aos="fade-up"
                 data-aos-delay="200">
-                Contact Reallanding today — and elevate your real estate brand to the next level.
+                Contact Real Landing today — and elevate your real estate brand to the next level.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
@@ -534,8 +534,8 @@
                     <i class="fas fa-paper-plane"></i>
                     Start Your Project
                 </a>
-                <a href="tel:+15551234567"
-                    class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
+                <a href="tel:+923186230122" class=" px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white
+                    font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-phone"></i>
                     Call Us Now
                 </a>

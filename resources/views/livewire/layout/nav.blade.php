@@ -15,7 +15,8 @@
 
             <!-- Desktop nav -->
             <nav class="hidden md:flex items-center gap-6">
-                <a href="{{ route('home') }}" class="text-sm hover:text-slate-900 hover:scale-105">Home</a>
+                <a href="{{ route('home') }}" wire:navigate
+                    class="text-sm hover:text-slate-900 hover:scale-105">Home</a>
                 <!-- Services dropdown -->
                 <div class="relative" @click.away="servicesOpen = false">
                     <button type="button" @click="servicesOpen = !servicesOpen"
@@ -32,36 +33,38 @@
                     <!-- Dropdown content -->
                     <div x-show="servicesOpen" x-transition.origin.top.left
                         class="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-md py-2 ring-1 ring-slate-100 z-50">
-                        <a href="{{ route('website.development') }}"
+                        <a href="{{ route('website.development') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Web Development</a>
-                        <a href="{{ route('social.media') }}"
+                        <a href="{{ route('social.media') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Social
                             Media Management</a>
-                        <a href="{{ route('seo') }}"
+                        <a href="{{ route('seo') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">SEO Services</a>
-                        <a href="{{ route('automation') }}"
+                        <a href="{{ route('automation') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Creative
                             Automation</a>
-                        <a href="{{ route('creative.content') }}"
+                        <a href="{{ route('creative.content') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Consulting</a>
-                        <a href="{{ route('lead.generation') }}"
+                        <a href="{{ route('lead.generation') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Lead
                             Generation</a>
-                        <a href="{{ route('paid.advertising') }}"
+                        <a href="{{ route('paid.advertising') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Paid
                             Ads</a>
-                        <a href="{{ route('creative.contentservices') }}"
+                        <a href="{{ route('creative.contentservices') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Creative
                             Content</a>
                     </div>
                 </div>
-                <a href="{{ route('about') }}" class="text-sm hover:text-slate-900 hover:scale-105">About Us</a>
+                <a href="{{ route('about') }}" wire:navigate class="text-sm hover:text-slate-900 hover:scale-105">About
+                    Us</a>
 
-                <a href="{{ route('contact') }}" class="text-sm hover:text-slate-900 hover:scale-105">Contact</a>
+                <a href="{{ route('contact') }}" wire:navigate
+                    class="text-sm hover:text-slate-900 hover:scale-105">Contact</a>
                 <a href="{{ route('contact') }}"
                     class="ml-4 inline-flex items-center gap-2 px-4 py-2 font-md rounded-lg bg-gradient-to-r from-primary/90 
                     to-primary text-white text-md shadow-sm hover:from-primary/70 hover:to-primary hover:shadow-md transition hover:scale-105">
-                    Get Started
+                    Book Meeting
                 </a>
             </nav>
 
@@ -88,23 +91,24 @@
     <div x-show="open" x-transition.duration.300ms
         class="md:hidden bg-white shadow-lg border-t border-slate-100 overflow-hidden">
         <div class="mx-6 mb-6 p-4 space-y-2">
-            <a href="{{ route('home') }}" class="block py-2">Home</a>
-            <a href="{{ route('about') }}" class="block py-2">About Us</a>
-            <a href="{{ route('contact')}}" class="block py-2">Contact</a>
+            <a href="{{ route('home') }}" wire:navigate class="block py-2">Home</a>
+            <a href="{{ route('about') }}" wire:navigate class="block py-2">About Us</a>
+            <a href="{{ route('contact') }}" wire:navigate class="block py-2">Contact</a>
 
             <!-- Dropdown inside mobile -->
             <details class="py-2">
                 <summary class="cursor-pointer text-sm font-medium">Services</summary>
                 <div class="pl-4 mt-2 space-y-1">
-                    <a href="{{ route('services') }}" class="block text-sm">Services</a>
-                    <a href="{{ route('website.development') }}" class="block text-sm">Web Development</a>
-                    <a href="{{ route('social.media') }}" class="block text-sm">Social Media</a>
-                    <a href="{{ route('seo') }}" class="block text-sm">SEO</a>
-                    <a href="{{ route('automation') }}" class="block text-sm">Automation</a>
-                    <a href="{{ route('creative.contentservices') }}" class="block text-sm">Creative Content</a>
-                    <a href="{{ route('lead.generation') }}" class="block text-sm">Lead Generation</a>
-                    <a href="{{ route('paid.advertising') }}" class="block text-sm">Paid Advertising</a>
-                    <a href="{{ route('creative.content') }}" class="block text-sm">Consulting</a>
+                    <a href="{{ route('services') }}" wire:navigate class="block text-sm">Services</a>
+                    <a href="{{ route('website.development') }}" wire:navigate class="block text-sm">Web Development</a>
+                    <a href="{{ route('social.media') }}" wire:navigate class="block text-sm">Social Media</a>
+                    <a href="{{ route('seo') }}" wire:navigate class="block text-sm">SEO</a>
+                    <a href="{{ route('automation') }}" wire:navigate class="block text-sm">Automation</a>
+                    <a href="{{ route('creative.contentservices') }}" wire:navigate class="block text-sm">Creative
+                        Content</a>
+                    <a href="{{ route('lead.generation') }}" wire:navigate class="block text-sm">Lead Generation</a>
+                    <a href="{{ route('paid.advertising') }}" wire:navigate class="block text-sm">Paid Advertising</a>
+                    <a href="{{ route('creative.content') }}" wire:navigate class="block text-sm">Consulting</a>
                 </div>
             </details>
 
