@@ -58,9 +58,13 @@
                 </div>
                 <a href="{{ route('about') }}" wire:navigate class="text-sm hover:text-slate-900 hover:scale-105">About
                     Us</a>
-
+                <a href="https://blog.reallanding.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-sm hover:text-slate-900 hover:scale-105">Blogs</a>
+                <a href="https://property.reallanding.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-sm hover:text-slate-900 hover:scale-105">List Your Property</a>
                 <a href="{{ route('contact') }}" wire:navigate
                     class="text-sm hover:text-slate-900 hover:scale-105">Contact</a>
+
                 <a href="{{ route('contact') }}"
                     class="ml-4 inline-flex items-center gap-2 px-4 py-2 font-md rounded-lg bg-gradient-to-r from-primary/90 
                     to-primary text-white text-md shadow-sm hover:from-primary/70 hover:to-primary hover:shadow-md transition hover:scale-105">
@@ -94,7 +98,11 @@
             <a href="{{ route('home') }}" wire:navigate class="block py-2">Home</a>
             <a href="{{ route('about') }}" wire:navigate class="block py-2">About Us</a>
             <a href="{{ route('contact') }}" wire:navigate class="block py-2">Contact</a>
-
+            blog
+            <a href="https://blog.reallanding.com/" target="_blank" rel="noopener noreferrer"
+                class="block py-2">Blogs</a>
+            <a href="https://property.reallanding.com/" target="_blank" rel="noopener noreferrer"
+                class="block py-2">List Your Property</a>
             <!-- Dropdown inside mobile -->
             <details class="py-2">
                 <summary class="cursor-pointer text-sm font-medium">Services</summary>

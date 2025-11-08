@@ -305,11 +305,11 @@
                             <select
                                 class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white form-input focus:outline-none focus:border-green-500 transition-all">
                                 <option value="">Select budget range</option>
-                                <option>₹50,000 - ₹1,00,000</option>
-                                <option>₹1,00,000 - ₹2,50,000</option>
-                                <option>₹2,50,000 - ₹5,00,000</option>
-                                <option>₹5,00,000 - ₹10,00,000</option>
-                                <option>₹10,00,000+</option>
+                                <option>$2,000 – $5,000</option>
+                                <option>$5,000 – $10,000</option>
+                                <option>$10,000 – $15,000</option>
+                                <option>$15,000 – $20,000</option>
+                                <option>$20,000+</option>
                                 <option>To be discussed</option>
                             </select>
                         </div>

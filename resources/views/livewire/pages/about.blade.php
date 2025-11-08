@@ -244,7 +244,7 @@
     </section>
 
     <!-- 🟩 Our Team -->
-    <section id="team" class="py-20 bg-white">
+    {{-- <section id="team" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">
@@ -361,7 +361,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- 🟩 Why Choose Us -->
     <section class="py-20 bg-gradient-to-br from-black to-gray-900 text-white">
