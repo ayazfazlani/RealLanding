@@ -598,12 +598,12 @@
                         <div class="absolute inset-0 bg-black/20"></div>
                         <div class="absolute bottom-4 left-6 text-white">
                             <h3 class="text-2xl font-bold">Syed Tahir Abbas</h3>
-                            <p class="text-green-100">CEO & Founder</p>
+                            <p class="text-green-100">Founder & CEO</p>
                         </div>
                     </div>
                     <div class="p-6">
                         <p class="text-gray-600 mb-4">
-                            Former real estate developer with 12+ years experience. Sarah leads our strategic vision and
+                            Former real estate developer with years experience. Sarah leads our strategic vision and
                             client partnerships.
                         </p>
                     </div>
@@ -618,7 +618,7 @@
                         <div class="absolute inset-0 bg-black/20"></div>
                         <div class="absolute bottom-4 left-6 text-white">
                             <h3 class="text-2xl font-bold">Syed Ali Abbas</h3>
-                            <p class="text-green-100">CTO & Co-Founder</p>
+                            <p class="text-green-100">Co-Founder & CTO</p>
                         </div>
                     </div>
                     <div class="p-6">
