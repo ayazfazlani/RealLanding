@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width" initial-scale="1" />
   {{-- livewire dynamic title --}}
   <title>{{ $title ?? 'Real Landing - Marketing Agency'}}</title>
   <meta name="description" content="Professional modern landing page built with Tailwind CSS" />

@@ -15,7 +15,7 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
                 <a href="#contact"
-                    class="px-8 py-3 bg-gradient-to-r  from-primary to-accent rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    class="px-8 py-3 bg-gradient-to-r from-primary to-accent rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     Get Started
                 </a>
                 <a href="#services"
@@ -40,7 +40,7 @@
 
                     <div class="mt-8 flex flex-wrap gap-4">
                         <a href="#contact"
-                            class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r  from-primary to-accent text-white font-medium shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                            class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-medium shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
                             Book a Meeting
                         </a>
                         <a href="#services"
@@ -56,7 +56,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 16h-1v-4h-1m4 0h-1V8m-4 4v6m6-10h.01M6 12h.01M6 20h.01" />
+                                        d="M13 16h-1v-4h-1m4 0h-1V8m-4 0v6m6-10h.01M6 12h.01M6 20h.01" />
                                 </svg>
                             </div>
                             <div>
@@ -190,7 +190,7 @@
                             </p>
                             <div class="mt-6">
                                 <a href="{{ route($service['link']) }}" wire:navigate
-                                    class="p-2 rounded-lg bg-gradient-to-r  from-primary to-accent text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                    class="p-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
                                     Learn More
                                 </a>
                             </div>
@@ -202,7 +202,6 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
     <!-- Stats Section -->
     <section class="py-20 bg-soft">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -350,7 +349,7 @@
                     </p>
                     <div class="pt-4">
                         <a href="#contact"
-                            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r  from-primary to-accent text-white font-medium shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-medium shadow transition-all duration-300 hover:scale-105 hover:shadow-lg">
                             Get Started
                         </a>
                     </div>
@@ -382,7 +381,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section (Filterable) -->
+    <!-- Portfolio Section (Filterable) - FIXED VERSION -->
     <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center">
@@ -394,187 +393,160 @@
 
             <!-- Filter buttons -->
             <div class="flex flex-wrap justify-center gap-4 mt-8">
-                @php
-                $filters = [
-                ['filter' => 'all', 'label' => 'All Projects'],
-                ['filter' => 'villa', 'label' => 'Villas'],
-                ['filter' => 'apartment', 'label' => 'Apartments'],
-                ['filter' => 'office', 'label' => 'Offices']
-                ];
-                @endphp
+                <button wire:click="filterPortfolio('all')"
+                    class="px-4 py-2 rounded bg-gray-200 transition-all duration-300 hover:bg-primary hover:text-white {{ $selectedFilter == 'all' ? 'bg-primary text-white' : '' }}"
+                    data-filter="all">
+                    All Projects
+                </button>
 
-                @foreach($filters as $filter)
-                <button
-                    class="apims-filter-btn px-4 py-2 rounded bg-gray-200 transition-all duration-300 hover:bg-primary hover:text-white {{ $filter['filter'] == 'all' ? 'apims-active-filter bg-primary text-white' : '' }}"
-                    data-filter="{{ $filter['filter'] }}">
-                    {{ $filter['label'] }}
+                @foreach($portfolioCategories as $category)
+                <button wire:click="filterPortfolio({{ $category->id }})"
+                    class="px-4 py-2 rounded bg-gray-200 transition-all duration-300 hover:bg-primary hover:text-white {{ $selectedFilter == $category->id ? 'bg-primary text-white' : '' }}"
+                    data-filter="{{ $category->id }}">
+                    {{ $category->name }}
                 </button>
                 @endforeach
             </div>
 
-            <!-- Portfolio Grid -->
-            <div class="grid md:grid-cols-3 gap-8 mt-10" id="apims-portfolio-container">
-                @php
-                $portfolioItems = [
-                [
-                'type' => 'villa',
-                'title' => 'Luxury Villa',
-                'description' => 'Modern villa with breathtaking views.',
-                'image' => 'luxury,villa,house',
-                'delay' => 0,
-                'modal_images' => ['luxury-villa-1', 'luxury-villa-2', 'luxury-villa-3'],
-                'modal_description' => 'This stunning luxury villa features contemporary architecture with
-                floor-to-ceiling windows offering panoramic views. The property includes a state-of-the-art kitchen,
-                infinity pool, and smart home automation system. Perfect for those seeking modern luxury living with all
-                amenities.',
-                'features' => ['Smart Home Automation', 'Infinity Pool', 'Panoramic Views', 'Private Garden', 'Home
-                Theater'],
-                'completion_date' => '2023',
-                'area' => '4500 sq ft',
-                'location' => 'Beverly Hills, CA'
-                ],
-                [
-                'type' => 'apartment',
-                'title' => 'Modern Apartment',
-                'description' => 'Elegant apartments designed for comfort.',
-                'image' => 'apartment,modern,interior',
-                'delay' => 100,
-                'modal_images' => ['modern-apartment-1', 'modern-apartment-2', 'modern-apartment-3'],
-                'modal_description' => 'These modern apartments combine functionality with elegant design. Each unit
-                features open-plan living spaces, premium finishes, and energy-efficient appliances. The building offers
-                communal amenities including gym, rooftop terrace, and 24/7 security.',
-                'features' => ['Open Plan Layout', 'Premium Finishes', 'Energy Efficient', 'Rooftop Terrace', '24/7
-                Security'],
-                'completion_date' => '2023',
-                'area' => '1200 sq ft',
-                'location' => 'Downtown, NYC'
-                ],
-                [
-                'type' => 'office',
-                'title' => 'Commercial Office',
-                'description' => 'Premium office spaces for business growth.',
-                'image' => 'office,building,modern',
-                'delay' => 200,
-                'modal_images' => ['commercial-office-1', 'commercial-office-2', 'commercial-office-3'],
-                'modal_description' => 'Designed for productivity and collaboration, these commercial offices feature
-                flexible workspaces, modern meeting rooms, and advanced technology infrastructure. Perfect for growing
-                businesses looking for professional environments.',
-                'features' => ['Flexible Workspaces', 'Modern Meeting Rooms', 'High-Speed Internet', 'Collaborative
-                Areas', 'Cafeteria'],
-                'completion_date' => '2023',
-                'area' => '8000 sq ft',
-                'location' => 'Financial District, SF'
-                ],
-                [
-                'type' => 'villa',
-                'title' => 'Lakeside Mansion',
-                'description' => 'Sprawling estate with private lake.',
-                'image' => 'mansion,lake,luxury',
-                'delay' => 0,
-                'modal_images' => ['lakeside-mansion-1', 'lakeside-mansion-2', 'lakeside-mansion-3'],
-                'modal_description' => 'This exclusive lakeside mansion offers unparalleled privacy and luxury. The
-                estate features a private lake, tennis court, and extensive gardens. The interior boasts custom
-                craftsmanship and premium materials throughout.',
-                'features' => ['Private Lake', 'Tennis Court', 'Wine Cellar', 'Home Gym', 'Guest House'],
-                'completion_date' => '2022',
-                'area' => '8500 sq ft',
-                'location' => 'Lake Tahoe, NV'
-                ],
-                [
-                'type' => 'apartment',
-                'title' => 'Urban Condo',
-                'description' => 'Stylish condos in the heart of the city.',
-                'image' => 'condo,urban,city',
-                'delay' => 100,
-                'modal_images' => ['urban-condo-1', 'urban-condo-2', 'urban-condo-3'],
-                'modal_description' => 'Located in the vibrant city center, these urban condos offer convenience and
-                style. Features include smart home technology, concierge services, and proximity to shopping, dining,
-                and entertainment.',
-                'features' => ['City Center Location', 'Smart Home Tech', 'Concierge Service', 'Underground Parking',
-                'Pet Friendly'],
-                'completion_date' => '2023',
-                'area' => '950 sq ft',
-                'location' => 'Chicago, IL'
-                ],
-                [
-                'type' => 'office',
-                'title' => 'Coworking Space',
-                'description' => 'Flexible spaces for modern teams.',
-                'image' => 'coworking,office,space',
-                'delay' => 0,
-                'modal_images' => ['coworking-space-1', 'coworking-space-2', 'coworking-space-3'],
-                'modal_description' => 'This innovative coworking space is designed for the modern workforce. It offers
-                flexible membership options, private offices, hot desks, and networking events. Perfect for freelancers,
-                startups, and remote teams.',
-                'features' => ['Flexible Memberships', 'Private Offices', 'Event Space', 'High-Speed WiFi', 'Coffee
-                Bar'],
-                'completion_date' => '2023',
-                'area' => '6000 sq ft',
-                'location' => 'Austin, TX'
-                ]
-                ];
-                @endphp
+            <!-- Portfolio Grid - FIXED CONTAINER -->
+            <div class="mt-10">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]" id="apims-portfolio-container">
+                    @foreach($portfolioItems as $index => $item)
+                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                        x-data="{
+                            show: false,
+                            init() {
+                                setTimeout(() => {
+                                    this.show = true;
+                                }, {{ $index * 100 }});
+                            }
+                        }" x-show="show" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-200"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90">
 
-                @foreach($portfolioItems as $index => $item)
-                <div class="apims-portfolio-item {{ $item['type'] }} bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-                    data-aos="zoom-in" data-aos-delay="{{ $item['delay'] }}">
-                    <img src="https://source.unsplash.com/600x400/?{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                        class="w-full h-56 object-cover transition-all duration-300 hover:scale-105" />
-                    <div class="p-6 text-left">
-                        <h3 class="text-2xl font-semibold mb-2">{{ $item['title'] }}</h3>
-                        <p class="text-gray-600 mb-4">{{ $item['description'] }}</p>
-                        <div class="flex justify-between items-center">
-                            <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full capitalize">
-                                {{ $item['type'] }}
-                            </span>
-                            <button
-                                class="view-project-btn px-4 py-2 bg-gradient-to-r from-primary to-accent text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                                data-index="{{ $index }}">
-                                View Details
-                            </button>
+                        <img src="{{ $item->image_url }}" alt="{{ $item->title }}"
+                            class="w-full h-56 object-cover transition-all duration-300 hover:scale-105" />
+
+                        <div class="p-6 text-left">
+                            <h3 class="text-2xl font-semibold mb-2">{{ $item->title }}</h3>
+                            <p class="text-gray-600 mb-4">{{ $item->short_description }}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full capitalize">
+                                    {{ $item->category->name }}
+                                </span>
+                                <button wire:click="showDetails({{ $item->id }})"
+                                    class="view-project-btn px-4 py-2 bg-gradient-to-r from-primary to-accent text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                    View Details
+                                </button>
+                            </div>
                         </div>
                     </div>
+                    @endforeach
+
+                    @if($portfolioItems->count() == 0)
+                    <div class="col-span-3 text-center py-12">
+                        <p class="text-gray-500 text-lg">No projects found for this category.</p>
+                    </div>
+                    @endif
                 </div>
-                @endforeach
             </div>
         </div>
     </section>
 
-    <!-- Project Modal -->
-    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="relative">
-                <!-- Close Button -->
-                <button id="closeModal"
-                    class="absolute top-4 right-4 z-10 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors">
-                    <i class="fas fa-times text-gray-600"></i>
-                </button>
+    <!-- Portfolio Modal -->
+    @if($showModal && $selectedPortfolioItem)
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 transition-opacity duration-300"
+        x-data="{ show: false, activeImage: 0 }" x-init="setTimeout(() => show = true, 100)" x-show="show"
+        x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" wire:click="closeModal">
 
-                <!-- Modal Content -->
-                <div id="modalContent">
-                    <!-- Content will be dynamically inserted here -->
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" @click.stop>
+            <!-- Close Button -->
+            <div class="flex justify-end p-4">
+                <button wire:click="closeModal"
+                    class="text-gray-500 hover:text-gray-700 transition-colors duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6">
+                <!-- Image Gallery -->
+                <div class="mb-6">
+                    <div class="relative h-80 bg-gray-200 rounded-lg overflow-hidden mb-4">
+                        @if($selectedPortfolioItem->itemDetails->count() > 0)
+                        @foreach($selectedPortfolioItem->itemDetails as $key => $detail)
+                        <img x-show="activeImage === {{ $key }}" src="{{ $detail->image_url }}"
+                            alt="{{ $detail->name }}"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                            x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0"
+                            x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200"
+                            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                        @endforeach
+                        @else
+                        <img src="{{ $selectedPortfolioItem->image_url }}" alt="{{ $selectedPortfolioItem->title }}"
+                            class="w-full h-full object-cover">
+                        @endif
+                    </div>
+
+                    @if($selectedPortfolioItem->itemDetails->count() > 1)
+                    <div class="grid grid-cols-4 gap-2">
+                        @foreach($selectedPortfolioItem->itemDetails as $key => $detail)
+                        <button @click="activeImage = {{ $key }}"
+                            class="h-20 bg-gray-200 rounded overflow-hidden transition-all duration-200 hover:opacity-80"
+                            :class="{ 'ring-2 ring-primary': activeImage === {{ $key }} }">
+                            <img src="{{ $detail->image }}" alt="{{ $detail->name }}"
+                                class="w-full h-full object-cover">
+                        </button>
+                        @endforeach
+                    </div>
+                    @endif
+                </div>
+
+                <!-- Project Details -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">{{ $selectedPortfolioItem->title }}</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            {{ $selectedPortfolioItem->short_description }}
+                        </p>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="font-semibold w-32">Category:</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
+                                    {{ $selectedPortfolioItem->category->name }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item Details -->
+                    @if($selectedPortfolioItem->itemDetails->count() > 0)
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Project Details</h4>
+                        <div class="space-y-4">
+                            @foreach($selectedPortfolioItem->itemDetails as $detail)
+                            <div class="border-l-4 border-primary pl-4 py-1">
+                                <h5 class="font-semibold text-gray-800">{{ $detail->name }}</h5>
+                                <p class="text-gray-600 text-sm mt-1">{{ $detail->description }}</p>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Project Modal -->
-    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="relative">
-                <!-- Close Button -->
-                <button id="closeModal"
-                    class="absolute top-4 right-4 z-10 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors">
-                    <i class="fas fa-times text-gray-600"></i>
-                </button>
-
-                <!-- Modal Content -->
-                <div id="modalContent">
-                    <!-- Content will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </div>
+    @endif
 
     <!-- 🟩 Our Team -->
     <section id="team" class="py-20 bg-white">
@@ -650,32 +622,10 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- Department Overview -->
-            {{-- <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center" data-aos="fade-up">
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200">
-                    <div class="text-3xl font-bold text-green-600 mb-2">8</div>
-                    <div class="font-medium text-gray-600">Marketing Experts</div>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200">
-                    <div class="text-3xl font-bold text-green-600 mb-2">5</div>
-                    <div class="font-medium text-gray-600">Design & Creative</div>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200">
-                    <div class="text-3xl font-bold text-green-600 mb-2">4</div>
-                    <div class="font-medium text-gray-600">Tech & Development</div>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-200">
-                    <div class="text-3xl font-bold text-green-600 mb-2">3</div>
-                    <div class="font-medium text-gray-600">Client Success</div>
-                </div>
-            </div> --}}
         </div>
     </section>
 
-    <!-- Testimonials carousel -->
-    <!-- Testimonials carousel -->
+    <!-- Testimonials carousel - FIXED MOBILE VERSION -->
     <section id="testimonials" class="py-20 bg-white border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center">
@@ -735,23 +685,23 @@
                         @endphp
 
                         @php
-                        // Group testimonials into slides of 3
+                        // Show 1 testimonial per slide on mobile, 2 on tablet, 3 on desktop
                         $testimonialGroups = array_chunk($testimonials, 3);
                         @endphp
 
-                        @foreach($testimonialGroups as $group)
-                        <div class="w-full flex-shrink-0">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                @foreach($group as $testimonial)
+                        @foreach($testimonialGroups as $groupIndex => $group)
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                @foreach($group as $testimonialIndex => $testimonial)
                                 <div
-                                    class="p-6 rounded-2xl bg-soft card-border transition-all duration-300 hover:shadow-lg">
-                                    <div class="flex gap-4 items-center">
+                                    class="p-6 rounded-2xl bg-soft card-border transition-all duration-300 hover:shadow-lg h-full flex flex-col">
+                                    <div class="flex gap-4 items-center mb-4">
                                         <img src="{{ $testimonial['image'] }}"
-                                            class="w-14 h-14 rounded-full object-cover transition-all duration-300 hover:scale-110" />
-                                        <div>
-                                            <div class="font-semibold">{{ $testimonial['name'] }}</div>
-                                            <div class="text-xs text-slate-400">{{ $testimonial['position'] }}</div>
-                                            {{-- ratings --}}
+                                            class="w-14 h-14 rounded-full object-cover transition-all duration-300 hover:scale-110 flex-shrink-0" />
+                                        <div class="min-w-0">
+                                            <div class="font-semibold truncate">{{ $testimonial['name'] }}</div>
+                                            <div class="text-xs text-slate-400 truncate">{{ $testimonial['position'] }}
+                                            </div>
                                             <div class="flex mt-1">
                                                 @for($i = 0; $i < 5; $i++) <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="w-4 h-4 text-yellow-400" viewBox="0 0 20 20"
@@ -763,7 +713,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="mt-4 text-slate-600">{{ $testimonial['text'] }}</p>
+                                    <p class="text-slate-600 flex-1 leading-relaxed">{{ $testimonial['text'] }}</p>
                                 </div>
                                 @endforeach
                             </div>
@@ -773,7 +723,7 @@
                 </div>
 
                 <!-- Controls -->
-                <div class="flex justify-center gap-3 mt-6">
+                <div class="flex justify-center gap-3 mt-8">
                     @php
                     $totalSlides = count($testimonialGroups);
                     @endphp
@@ -784,18 +734,19 @@
                         @endfor
                 </div>
 
-                <!-- Navigation Arrows -->
+                <!-- Navigation Arrows - Hidden on mobile -->
                 <button id="apims-prev-btn"
-                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-primary hover:text-white">
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-primary hover:text-white hidden md:block">
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 <button id="apims-next-btn"
-                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-primary hover:text-white">
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-primary hover:text-white hidden md:block">
                     <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
         </div>
     </section>
+
     <!-- Contact & FAQ Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -897,7 +848,7 @@
                         </div>
 
                         <button type="submit"
-                            class="w-full px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 group">
+                            class="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 group">
                             <i
                                 class="fas fa-paper-plane group-hover:translate-x-1 transition-transform duration-300"></i>
                             Send Message
@@ -1011,7 +962,7 @@
                     </div>
 
                     <!-- Additional Contact Info -->
-                    <div class="bg-gradient-to-r  from-primary to-accent rounded-2xl p-6 text-white">
+                    <div class="bg-gradient-to-r from-primary to-accent rounded-2xl p-6 text-white">
                         <h3 class="text-xl font-bold mb-4">Prefer to talk directly?</h3>
                         <div class="space-y-3">
                             <div class="flex items-center gap-3">
@@ -1048,9 +999,8 @@
         </div>
     </section>
 
-
     <!-- CTA -->
-    <section id="pricing" class="py-16 bg-gradient-to-r  from-primary/5 to-accent/5">
+    <section id="pricing" class="py-16 bg-gradient-to-r from-primary/5 to-accent/5">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h3 class="text-2xl font-bold">
                 Ready to grow? Let's build something great together.
@@ -1060,7 +1010,7 @@
             </p>
             <div class="mt-6 flex justify-center gap-4">
                 <a href="#contact"
-                    class="px-6 py-3 rounded-lg bg-gradient-to-r  from-primary to-accent text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    class="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-accent text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
                     Book a free call
                 </a>
                 <a href="#contact"
@@ -1072,338 +1022,143 @@
     </section>
 </div>
 
-
-
-
-
-
-{{-- <style>
-    /* Additional styles for better animations */
-    .apims-portfolio-item {
-        transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
-
-    .mixitup-animating .apims-portfolio-item {
-        opacity: 0.7;
-        transform: scale(0.95);
-    }
-
-    /* Ensure proper carousel sizing */
-    #apims-testimonial-carousel {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    #apims-testimonial-slides>div {
-        flex-shrink: 0;
-    }
-
-    /* Smooth transitions for count-up */
-    .apims-counter {
-        transition: all 0.3s ease;
-    }
-
-    /* Hover effects for service cards */
-    .service-card-apims:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    }
-</style> --}}
-
-{{-- aos linke --}}
+@stack('script')
 @push('script')
+
+
+<!-- Add Alpine.js for animations -->
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<style>
+    .portfolio-item {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Fix for horizontal scroll issue */
+    #apims-portfolio-container {
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Ensure proper grid layout */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Ensure images don't cause overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Testimonial carousel styles */
+    #apims-testimonial-slides {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .apims-testimonial-dot {
+        cursor: pointer;
+    }
+
+    .apims-testimonial-dot.apims-active-dot {
+        transform: scale(1.2);
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+        #testimonials .p-6 {
+            padding: 1.5rem;
+        }
+
+        #testimonials .text-lg {
+            font-size: 1rem;
+        }
+
+        /* Ensure proper spacing on mobile */
+        #apims-testimonial-slides>div {
+            padding: 0 1rem;
+        }
+    }
+
+    /* Ensure testimonials don't overflow on small screens */
+    .testimonial-text {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+</style>
+
 <script>
-    // Portfolio Filter Functionality
-function setupPortfolioFilter() {
-    const filterButtons = document.querySelectorAll('.apims-filter-btn');
-    const portfolioItems = document.querySelectorAll('.apims-portfolio-item');
-    
-    if (filterButtons.length === 0 || portfolioItems.length === 0) return;
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Testimonial Carousel
+        const testimonialSlides = document.getElementById('apims-testimonial-slides');
+        const testimonialDots = document.querySelectorAll('.apims-testimonial-dot');
+        const prevBtn = document.getElementById('apims-prev-btn');
+        const nextBtn = document.getElementById('apims-next-btn');
+        
+        if (testimonialSlides && testimonialDots.length > 0) {
+            let currentSlide = 0;
+            const totalSlides = testimonialDots.length;
             
-            // Update active button
-            filterButtons.forEach(btn => {
-                btn.classList.remove('apims-active-filter', 'bg-primary', 'text-white');
-                btn.classList.add('bg-gray-200', 'hover:bg-primary', 'hover:text-white');
-            });
-            this.classList.add('apims-active-filter', 'bg-primary', 'text-white');
-            this.classList.remove('bg-gray-200', 'hover:bg-primary', 'hover:text-white');
-            
-            // Filter items with animation
-            portfolioItems.forEach(item => {
-                if (filter === 'all' || item.classList.contains(filter)) {
-                    item.style.display = 'block';
-                    // Trigger reflow for animation
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                        item.style.transform = 'translateY(0) scale(1)';
-                    }, 10);
-                } else {
-                    item.style.opacity = '0';
-                    item.style.transform = 'translateY(20px) scale(0.95)';
-                    setTimeout(() => {
-                        item.style.display = 'none';
-                    }, 300);
-                }
-            });
-        });
-    });
-}
-
-// Project Modal Functionality
-function setupProjectModals() {
-    const modal = document.getElementById('projectModal');
-    const closeModal = document.getElementById('closeModal');
-    const modalContent = document.getElementById('modalContent');
-    const viewButtons = document.querySelectorAll('.view-project-btn');
-    
-    if (!modal || !closeModal || !modalContent) {
-        console.log('Modal elements not found');
-        return;
-    }
-    
-    // Close modal function
-    function closeProjectModal() {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-    }
-    
-    // Close modal events
-    closeModal.addEventListener('click', closeProjectModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeProjectModal();
-        }
-    });
-    
-    // Escape key to close
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-            closeProjectModal();
-        }
-    });
-    
-    // View project buttons
-    viewButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const projectIndex = parseInt(this.getAttribute('data-index'));
-            console.log('Opening project modal for index:', projectIndex);
-            
-            // Get project data from PHP array (passed to JavaScript)
-            const projectData = window.portfolioItems ? window.portfolioItems[projectIndex] : getProjectData(projectIndex);
-            
-            if (projectData) {
-                modalContent.innerHTML = generateModalContent(projectData);
-                modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            } else {
-                console.error('Project data not found for index:', projectIndex);
+            function updateCarousel() {
+                testimonialSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Update dots
+                testimonialDots.forEach((dot, index) => {
+                    dot.classList.toggle('bg-primary', index === currentSlide);
+                    dot.classList.toggle('bg-slate-300', index !== currentSlide);
+                });
             }
-        });
-    });
-}
-
-// Get project data (fallback function)
-function getProjectData(index) {
-    const portfolioItems = [
-        {
-            type: 'villa',
-            title: 'Luxury Villa',
-            description: 'Modern villa with breathtaking views.',
-            image: 'luxury,villa,house',
-            delay: 0,
-            modal_images: ['luxury-villa-1', 'luxury-villa-2', 'luxury-villa-3'],
-            modal_description: 'This stunning luxury villa features contemporary architecture with floor-to-ceiling windows offering panoramic views. The property includes a state-of-the-art kitchen, infinity pool, and smart home automation system. Perfect for those seeking modern luxury living with all amenities.',
-            features: ['Smart Home Automation', 'Infinity Pool', 'Panoramic Views', 'Private Garden', 'Home Theater'],
-            completion_date: '2023',
-            area: '4500 sq ft',
-            location: 'Beverly Hills, CA'
-        },
-        {
-            type: 'apartment',
-            title: 'Modern Apartment',
-            description: 'Elegant apartments designed for comfort.',
-            image: 'apartment,modern,interior',
-            delay: 100,
-            modal_images: ['modern-apartment-1', 'modern-apartment-2', 'modern-apartment-3'],
-            modal_description: 'These modern apartments combine functionality with elegant design. Each unit features open-plan living spaces, premium finishes, and energy-efficient appliances. The building offers communal amenities including gym, rooftop terrace, and 24/7 security.',
-            features: ['Open Plan Layout', 'Premium Finishes', 'Energy Efficient', 'Rooftop Terrace', '24/7 Security'],
-            completion_date: '2023',
-            area: '1200 sq ft',
-            location: 'Downtown, NYC'
-        },
-        {
-            type: 'office',
-            title: 'Commercial Office',
-            description: 'Premium office spaces for business growth.',
-            image: 'office,building,modern',
-            delay: 200,
-            modal_images: ['commercial-office-1', 'commercial-office-2', 'commercial-office-3'],
-            modal_description: 'Designed for productivity and collaboration, these commercial offices feature flexible workspaces, modern meeting rooms, and advanced technology infrastructure. Perfect for growing businesses looking for professional environments.',
-            features: ['Flexible Workspaces', 'Modern Meeting Rooms', 'High-Speed Internet', 'Collaborative Areas', 'Cafeteria'],
-            completion_date: '2023',
-            area: '8000 sq ft',
-            location: 'Financial District, SF'
-        },
-        {
-            type: 'villa',
-            title: 'Lakeside Mansion',
-            description: 'Sprawling estate with private lake.',
-            image: 'mansion,lake,luxury',
-            delay: 0,
-            modal_images: ['lakeside-mansion-1', 'lakeside-mansion-2', 'lakeside-mansion-3'],
-            modal_description: 'This exclusive lakeside mansion offers unparalleled privacy and luxury. The estate features a private lake, tennis court, and extensive gardens. The interior boasts custom craftsmanship and premium materials throughout.',
-            features: ['Private Lake', 'Tennis Court', 'Wine Cellar', 'Home Gym', 'Guest House'],
-            completion_date: '2022',
-            area: '8500 sq ft',
-            location: 'Lake Tahoe, NV'
-        },
-        {
-            type: 'apartment',
-            title: 'Urban Condo',
-            description: 'Stylish condos in the heart of the city.',
-            image: 'condo,urban,city',
-            delay: 100,
-            modal_images: ['urban-condo-1', 'urban-condo-2', 'urban-condo-3'],
-            modal_description: 'Located in the vibrant city center, these urban condos offer convenience and style. Features include smart home technology, concierge services, and proximity to shopping, dining, and entertainment.',
-            features: ['City Center Location', 'Smart Home Tech', 'Concierge Service', 'Underground Parking', 'Pet Friendly'],
-            completion_date: '2023',
-            area: '950 sq ft',
-            location: 'Chicago, IL'
-        },
-        {
-            type: 'office',
-            title: 'Coworking Space',
-            description: 'Flexible spaces for modern teams.',
-            image: 'coworking,office,space',
-            delay: 0,
-            modal_images: ['coworking-space-1', 'coworking-space-2', 'coworking-space-3'],
-            modal_description: 'This innovative coworking space is designed for the modern workforce. It offers flexible membership options, private offices, hot desks, and networking events. Perfect for freelancers, startups, and remote teams.',
-            features: ['Flexible Memberships', 'Private Offices', 'Event Space', 'High-Speed WiFi', 'Coffee Bar'],
-            completion_date: '2023',
-            area: '6000 sq ft',
-            location: 'Austin, TX'
-        }
-    ];
-    
-    return portfolioItems[index];
-}
-
-// Generate modal content
-function generateModalContent(project) {
-    return `
-        <div class="p-6">
-            <!-- Image Gallery -->
-            <div class="mb-6">
-                <div class="grid grid-cols-3 gap-4 mb-4">
-                    ${project.modal_images.map((img, index) => `
-                        <img src="https://source.unsplash.com/400x300/?${img}" 
-                             alt="${project.title} ${index + 1}"
-                             class="w-full h-32 object-cover rounded-lg cursor-pointer transition-all duration-300 hover:scale-105"
-                             onclick="openImageModal('https://source.unsplash.com/1200x800/?${img}')">
-                    `).join('')}
-                </div>
-            </div>
             
-            <!-- Project Details -->
-            <div class="space-y-6">
-                <div>
-                    <h2 class="text-3xl font-bold text-slate-900 mb-2">${project.title}</h2>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-                            ${project.type}
-                        </span>
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">
-                            Completed: ${project.completion_date}
-                        </span>
-                    </div>
-                </div>
-                
-                <!-- Project Description -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Project Overview</h3>
-                    <p class="text-gray-600 leading-relaxed">${project.modal_description}</p>
-                </div>
-                
-                <!-- Project Features -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Key Features</h3>
-                    <div class="grid grid-cols-2 gap-3">
-                        ${project.features.map(feature => `
-                            <div class="flex items-center gap-2">
-                                <i class="fas fa-check text-green-500"></i>
-                                <span class="text-gray-700">${feature}</span>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-                
-                <!-- Project Specifications -->
-                <div class="grid grid-cols-2 gap-6 pt-4 border-t">
-                    <div>
-                        <h4 class="font-semibold text-gray-700 mb-2">Area</h4>
-                        <p class="text-gray-600">${project.area}</p>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-gray-700 mb-2">Location</h4>
-                        <p class="text-gray-600">${project.location}</p>
-                    </div>
-                </div>
-                
-                <!-- Action Buttons -->
-                <div class="flex gap-4 pt-6 border-t">
-                    <button class="flex-1 px-6 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <i class="fas fa-calendar mr-2"></i>
-                        Schedule Visit
-                    </button>
-                    <button class="flex-1 px-6 py-3 border border-primary text-primary rounded-lg transition-all duration-300 hover:bg-primary hover:text-white">
-                        <i class="fas fa-download mr-2"></i>
-                        Download Brochure
-                    </button>
-                </div>
-            </div>
-        </div>
-    `;
-}
-
-// Full-size image modal
-function openImageModal(src) {
-    const imageModal = document.createElement('div');
-    imageModal.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4';
-    imageModal.innerHTML = `
-        <div class="relative max-w-4xl max-h-full">
-            <button onclick="this.parentElement.parentElement.remove()" 
-                    class="absolute -top-12 right-0 text-white text-2xl hover:text-gray-300">
-                <i class="fas fa-times"></i>
-            </button>
-            <img src="${src}" alt="Full size" class="max-w-full max-h-full object-contain">
-        </div>
-    `;
-    document.body.appendChild(imageModal);
-    
-    // Close on background click
-    imageModal.addEventListener('click', (e) => {
-        if (e.target === imageModal) {
-            imageModal.remove();
+            // Next button
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateCarousel();
+                });
+            }
+            
+            // Previous button
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                });
+            }
+            
+            // Dot navigation
+            testimonialDots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Auto-advance (optional)
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
         }
     });
-}
-
-// Initialize portfolio functionality
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Initializing portfolio...');
-    setupPortfolioFilter();
-    setupProjectModals();
-});
-
-// Also initialize when Livewire navigates
-document.addEventListener('livewire:navigated', function() {
-    console.log('Livewire navigated - initializing portfolio...');
-    setupPortfolioFilter();
-    setupProjectModals();
-});
 </script>
+
 @endpush
