@@ -1026,7 +1026,6 @@
 @push('script')
 
 
-<!-- Add Alpine.js for animations -->
 <script src="//unpkg.com/alpinejs" defer></script>
 
 <style>
