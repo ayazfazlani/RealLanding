@@ -514,11 +514,20 @@
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
                         <h3 class="text-2xl font-bold mb-4">{{ $selectedPortfolioItem->title }}</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
-                            {{ $selectedPortfolioItem->short_description }}
-                        </p>
 
-                        <div class="space-y-3">
+                        <!-- Rich Text Description -->
+                        <div class="text-gray-600 mb-6 leading-relaxed prose max-w-none">
+                            {!! $selectedPortfolioItem->short_description !!}
+                        </div>
+
+                        <!-- If you have a full_description field with rich text -->
+                        @if($selectedPortfolioItem->full_description)
+                        <div class="mt-6 prose max-w-none">
+                            {!! $selectedPortfolioItem->full_description !!}
+                        </div>
+                        @endif
+
+                        <div class="space-y-3 mt-6">
                             <div class="flex items-center">
                                 <span class="font-semibold w-32">Category:</span>
                                 <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
@@ -536,7 +545,10 @@
                             @foreach($selectedPortfolioItem->itemDetails as $detail)
                             <div class="border-l-4 border-primary pl-4 py-1">
                                 <h5 class="font-semibold text-gray-800">{{ $detail->name }}</h5>
-                                <p class="text-gray-600 text-sm mt-1">{{ $detail->description }}</p>
+                                <!-- Rich Text for Item Detail Description -->
+                                <div class="text-gray-600 text-sm mt-1 prose prose-sm max-w-none">
+                                    {!! $detail->description !!}
+                                </div>
                             </div>
                             @endforeach
                         </div>
