@@ -289,8 +289,8 @@
                 <div class="col-span-12 lg:col-span-4 text-center">
                     <div
                         class="rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-300 hover:shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=456"
-                            alt="team"
+                        <img src="https://thumbs.dreamstime.com/b/eco-friendly-home-concept-logo-featuring-light-bulb-house-inside-green-color-scheme-symbolic-design-represent-372715880.jpg"
+                            alt="what makes us unique"
                             class="w-full h-full object-cover mx-auto transition-all duration-300 hover:scale-105" />
                     </div>
                 </div>
@@ -662,7 +662,7 @@
                         'name' => 'Omar Latif',
                         'position' => 'Marketing Lead, Nova',
                         'image' =>
-                        'https://images.unsplash.com/photo-1545996124-1a12aed5a6b8?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=7',
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsaRx7Wc-jISQc73iOzy6lS0jCxGGbVY-krA&s',
                         'text' => '"They delivered on time and exceeded expectations. Highly recommended for B2B SaaS."'
                         ],
                         [
@@ -683,7 +683,7 @@
                         'name' => 'Lisa Thompson',
                         'position' => 'Marketing Director, GrowthCo',
                         'image' =>
-                        'https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3',
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZuvPkvCOAqnXx2C8Ay8orNWGs-C89Rz8xQA&s',
                         'text' => '"Our conversion rates improved by 45% within the first quarter of working together."'
                         ],
                         [

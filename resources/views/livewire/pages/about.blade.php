@@ -95,12 +95,12 @@
 
                     <div class="mt-8 grid grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="text-center p-4 bg-gray-50 rounded-xl border border-gray-200">
-                            <div class="text-3xl font-bold text-green-600 mb-2">₹50Cr+</div>
+                            <div class="text-3xl font-bold text-green-600 mb-2">$50k+</div>
                             <div class="font-medium text-gray-600">Property Value Marketed</div>
                         </div>
                         <div class="text-center p-4 bg-gray-50 rounded-xl border border-gray-200">
-                            <div class="text-3xl font-bold text-green-600 mb-2">15+</div>
-                            <div class="font-medium text-gray-600">Cities Served</div>
+                            <div class="text-3xl font-bold text-green-600 mb-2">35+</div>
+                            <div class="font-medium text-gray-600">Countries Served</div>
                         </div>
                     </div>
                 </div>

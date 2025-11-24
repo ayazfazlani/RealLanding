@@ -508,7 +508,7 @@
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <a href="contact.html"
+                <a href="{{ route('home')}}#contact"
                     class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-calendar-check"></i>
                     Book a Free Consultation
