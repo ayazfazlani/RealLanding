@@ -420,12 +420,12 @@
                 Let's create a modern, lead-focused website that makes your real estate brand stand out online.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="{{ route('home')}}#contact" wire:navigate
+                <a href="{{ route('contact')}}" wire:navigate
                     class="px-8 py-4 rounded-xl bg-white text-primary font-semibold shadow-lg hover:bg-gray-100 transition-all flex items-center gap-2">
                     <i class="fas fa-code"></i>
                     Let's Build My Website
                 </a>
-                <a href="{{ route('home')}}#contact " wire:navigate
+                <a href="{{ route('contact')}} " wire:navigate
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-calendar-alt"></i>
                     Schedule a Demo

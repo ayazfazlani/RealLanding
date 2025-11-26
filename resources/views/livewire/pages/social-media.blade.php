@@ -491,7 +491,7 @@
                 business.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="{{ route('home')}}#contact"
+                <a href="{{ route('contact')}}"
                     class="px-8 py-4 rounded-xl bg-white text-primary font-semibold shadow-lg hover:bg-gray-100 transition-all flex items-center gap-2">
                     <i class="fas fa-comments"></i>
                     Book a Free Social Media Strategy Call

@@ -289,8 +289,7 @@
                 <div class="col-span-12 lg:col-span-4 text-center">
                     <div
                         class="rounded-2xl overflow-hidden shadow-lg mx-auto transition-all duration-300 hover:shadow-xl">
-                        <img src="https://thumbs.dreamstime.com/b/eco-friendly-home-concept-logo-featuring-light-bulb-house-inside-green-color-scheme-symbolic-design-represent-372715880.jpg"
-                            alt="what makes us unique"
+                        <img src="{{ asset('assets/images/why-choose-us.jpg') }}" alt="what makes us unique"
                             class="w-full h-full object-cover mx-auto transition-all duration-300 hover:scale-105" />
                     </div>
                 </div>

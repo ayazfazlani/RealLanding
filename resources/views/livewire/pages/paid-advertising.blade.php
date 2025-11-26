@@ -487,7 +487,7 @@
                 Let's create a real estate SEO strategy that gets you found, trusted, and chosen.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="{{ route('home')}}#contact"
+                <a href="{{ route('contact')}}"
                     class="px-8 py-4 rounded-xl bg-white text-green-600 font-semibold shadow-lg hover:bg-gray-100 transition-all flex items-center gap-2">
                     <i class="fas fa-search"></i>
                     Request a Free SEO Consultation
