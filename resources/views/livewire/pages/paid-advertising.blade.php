@@ -2,34 +2,34 @@
     <!-- 🟩 Section 1: Hero Banner -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-r  fbg-gradient-to-r  from-primary/90 to-black/80  z-10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-green-500/90 to-black/80 z-10"></div>
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="SEO analytics dashboard" class="w-full h-full object-cover opacity-70" />
+                alt="Advertising analytics dashboard" class="w-full h-full object-cover opacity-70" />
         </div>
 
         <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 text-center text-white">
             <div
                 class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-white/20">
                 <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                <span class="text-sm font-medium">Real Estate SEO Specialists</span>
+                <span class="text-sm font-medium">Paid Advertising Specialists</span>
             </div>
 
             <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight" data-aos="fade-up">
-                Rank Higher. Get More <span class="text-gradient">Qualified Real Estate Leads</span>.
+                Instant Traffic. Maximum <span class="text-gradient">ROI from Paid Ads</span>.
             </h1>
             <p class="text-xl lg:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up"
                 data-aos-delay="200">
-                We help real estate businesses dominate Google search with powerful SEO strategies designed to attract
-                property buyers, investors, and renters in your target market.
+                We drive immediate, high-converting traffic to your real estate business through strategic paid
+                advertising campaigns on Google, Facebook, and Instagram.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <a href="#contact"
-                    class="px-8 py-4 rounded-xl bg-gradient-to-r  from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
+                <button href="{{ route('contact') }}" wire:navigate
+                    class="px-8 py-4 rounded-xl bg-gradient-to-r from-green-600 to-green-800 text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-chart-line"></i>
-                    Get a Free SEO Audit
-                </a>
-                <a href="#services"
+                    Get Free Ad Audit
+                </button>
+                <a href="#portfolio"
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-play-circle"></i>
                     View Case Studies
@@ -55,117 +55,108 @@
     <section class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 class="text-4xl lg:text-5xl font-bold mb-6" data-aos="fade-up">
-                Why SEO Is Essential for <span class="text-gradient">Real Estate Marketing</span>
+                Why Paid Ads Deliver <span class="text-gradient">Immediate Results</span>
             </h2>
             <div class="text-lg text-gray-600 space-y-6" data-aos="fade-up" data-aos-delay="200">
                 <p>
-                    Most property buyers start their search online — and if your website isn't visible on Google, your
-                    competitors get the leads.
-                </p>
-                <p>
-                    Our real estate SEO services help you rank higher for property-related keywords, generate quality
-                    traffic, and convert visitors into verified leads.
-                </p>
-                <p>
-                    From on-page optimization to Google Maps visibility, we ensure your brand stays ahead in local and
-                    global property searches.
+                    While SEO builds long-term growth, paid advertising puts your real estate business in front of
+                    ready-to-buy prospects immediately.
+                    Our targeted ad campaigns reach high-intent buyers actively searching for properties, investors
+                    looking for opportunities,
+                    and renters in your specific market areas.
                 </p>
             </div>
 
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-6 bg-gray-50 rounded-xl border border-gray-200" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-3xl font-bold text-green-600 mb-2">93%</div>
-                    <div class="font-medium">Start Online</div>
-                    <p class="text-gray-600 text-sm mt-2">Of property searches begin with search engines</p>
+                    <div class="text-3xl font-bold text-green-600 mb-2">24-48h</div>
+                    <div class="font-medium">Quick Launch</div>
+                    <p class="text-gray-600 text-sm mt-2">Campaigns live and driving traffic within days</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-xl border border-gray-200" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-3xl font-bold text-green-600 mb-2">5x</div>
-                    <div class="font-medium">Higher Conversion</div>
-                    <p class="text-gray-600 text-sm mt-2">SEO leads convert better than other channels</p>
+                    <div class="text-3xl font-bold text-green-600 mb-2">3-5x</div>
+                    <div class="font-medium">Higher CTR</div>
+                    <p class="text-gray-600 text-sm mt-2">Better click-through rates than organic search</p>
                 </div>
                 <div class="p-6 bg-gray-50 rounded-xl border border-gray-200" data-aos="fade-up" data-aos-delay="500">
-                    <div class="text-3xl font-bold text-green-600 mb-2">46%</div>
-                    <div class="font-medium">Local Searches</div>
-                    <p class="text-gray-600 text-sm mt-2">Of all searches have local intent for real estate</p>
+                    <div class="text-3xl font-bold text-green-600 mb-2">67%</div>
+                    <div class="font-medium">More Conversions</div>
+                    <p class="text-gray-600 text-sm mt-2">Higher conversion rates from targeted audiences</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🟩 Section 3: Our SEO Services -->
+    <!-- 🟩 Section 3: Our Advertising Services -->
     <section class="py-20 bg-gradient-to-br from-green-50 to-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left: Services Content -->
                 <div>
                     <h2 class="text-4xl lg:text-5xl font-bold mb-8" data-aos="fade-right">
-                        Our Real Estate <span class="text-gradient">SEO Services</span>
+                        Our Real Estate <span class="text-gradient">Advertising Services</span>
                     </h2>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Service 1 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="100">
-                            <div class="text-3xl mb-4 text-green-600">🔍</div>
-                            <h3 class="text-xl font-bold mb-2">Keyword Research & Strategy</h3>
+                            <div class="text-3xl mb-4 text-green-600">🎯</div>
+                            <h3 class="text-xl font-bold mb-2">Google Ads PPC</h3>
                             <p class="text-gray-600">
-                                We identify high-intent property-related keywords that attract qualified buyers and
-                                investors in your target locations.
+                                Target high-intent buyers searching for properties in your area with strategic
+                                pay-per-click campaigns.
                             </p>
                         </div>
 
                         <!-- Service 2 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="200">
-                            <div class="text-3xl mb-4 text-green-600">🏗</div>
-                            <h3 class="text-xl font-bold mb-2">On-Page SEO Optimization</h3>
+                            <div class="text-3xl mb-4 text-green-600">📱</div>
+                            <h3 class="text-xl font-bold mb-2">Social Media Ads</h3>
                             <p class="text-gray-600">
-                                We optimize your website's content, meta tags, URLs, and structure for maximum search
-                                engine visibility.
+                                Reach potential buyers on Facebook, Instagram, and LinkedIn with visually compelling
+                                property ads.
                             </p>
                         </div>
 
                         <!-- Service 3 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="300">
-                            <div class="text-3xl mb-4 text-green-600">🌎</div>
-                            <h3 class="text-xl font-bold mb-2">Local SEO</h3>
+                            <div class="text-3xl mb-4 text-green-600">🗺️</div>
+                            <h3 class="text-xl font-bold mb-2">Geo-Targeting</h3>
                             <p class="text-gray-600">
-                                We make sure your real estate business appears in local map searches, "near me" queries,
-                                and local property listings.
+                                Show your ads to users in specific neighborhoods, cities, or regions where you operate.
                             </p>
                         </div>
 
                         <!-- Service 4 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="400">
-                            <div class="text-3xl mb-4 text-green-600">🧩</div>
-                            <h3 class="text-xl font-bold mb-2">Technical SEO</h3>
+                            <div class="text-3xl mb-4 text-green-600">📹</div>
+                            <h3 class="text-xl font-bold mb-2">Video Advertising</h3>
                             <p class="text-gray-600">
-                                We improve your site speed, mobile performance, and crawlability so Google can easily
-                                index your website.
+                                Showcase properties with stunning video tours on YouTube and social media platforms.
                             </p>
                         </div>
 
                         <!-- Service 5 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="500">
-                            <div class="text-3xl mb-4 text-green-600">🏘</div>
-                            <h3 class="text-xl font-bold mb-2">Real Estate Content Optimization</h3>
+                            <div class="text-3xl mb-4 text-green-600">📊</div>
+                            <h3 class="text-xl font-bold mb-2">Retargeting Campaigns</h3>
                             <p class="text-gray-600">
-                                We create and optimize blogs, landing pages, and property descriptions to attract and
-                                engage search traffic.
+                                Re-engage visitors who showed interest in your properties but didn't convert.
                             </p>
                         </div>
 
                         <!-- Service 6 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="600">
-                            <div class="text-3xl mb-4 text-green-600">🔗</div>
-                            <h3 class="text-xl font-bold mb-2">Link Building & Authority Growth</h3>
+                            <div class="text-3xl mb-4 text-green-600">💼</div>
+                            <h3 class="text-xl font-bold mb-2">Lead Generation Ads</h3>
                             <p class="text-gray-600">
-                                We build quality backlinks from trusted real estate platforms and industry websites to
-                                boost your domain authority.
+                                Capture qualified leads with optimized forms and landing pages designed for conversions.
                             </p>
                         </div>
                     </div>
@@ -175,7 +166,7 @@
                 <div class="relative" data-aos="fade-left">
                     <div class="rounded-2xl overflow-hidden shadow-2xl border-2 border-green-600">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="SEO analytics dashboard" class="w-full h-auto object-cover" />
+                            alt="Advertising analytics dashboard" class="w-full h-auto object-cover" />
                     </div>
 
                     <!-- Floating element -->
@@ -190,10 +181,10 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">
-                    How Our <span class="text-gradient">SEO Process</span> Works
+                    Our <span class="text-gradient">Advertising Process</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    A systematic approach to improving your search visibility and driving qualified real estate leads
+                    A strategic approach to launching and optimizing high-converting paid campaigns
                 </p>
             </div>
 
@@ -203,12 +194,12 @@
                     data-aos="fade-up" data-aos-delay="100">
                     <div
                         class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-600 to-green-800 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-bullseye"></i>
                     </div>
                     <div class="mb-2 font-bold text-green-600">Step 1</div>
-                    <h3 class="text-xl font-bold mb-3">Audit & Research</h3>
+                    <h3 class="text-xl font-bold mb-3">Audit & Strategy</h3>
                     <p class="text-gray-600">
-                        We analyze your website and competitors to identify opportunities.
+                        Analyze your goals and define target audiences, budgets, and platforms.
                     </p>
                 </div>
 
@@ -217,12 +208,12 @@
                     data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-600 to-green-800 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-palette"></i>
                     </div>
                     <div class="mb-2 font-bold text-green-600">Step 2</div>
-                    <h3 class="text-xl font-bold mb-3">Strategy & Planning</h3>
+                    <h3 class="text-xl font-bold mb-3">Creative Development</h3>
                     <p class="text-gray-600">
-                        We define the right keywords, content plan, and ranking goals.
+                        Design compelling ad creatives and write persuasive copy that converts.
                     </p>
                 </div>
 
@@ -231,12 +222,12 @@
                     data-aos="fade-up" data-aos-delay="300">
                     <div
                         class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-600 to-green-800 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-rocket"></i>
                     </div>
                     <div class="mb-2 font-bold text-green-600">Step 3</div>
-                    <h3 class="text-xl font-bold mb-3">Optimization</h3>
+                    <h3 class="text-xl font-bold mb-3">Campaign Launch</h3>
                     <p class="text-gray-600">
-                        We apply on-page, off-page, and technical SEO improvements.
+                        Set up and launch optimized campaigns across selected platforms.
                     </p>
                 </div>
 
@@ -245,12 +236,12 @@
                     data-aos="fade-up" data-aos-delay="400">
                     <div
                         class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-600 to-green-800 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
-                        <i class="fas fa-link"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
                     <div class="mb-2 font-bold text-green-600">Step 4</div>
-                    <h3 class="text-xl font-bold mb-3">Content & Link Building</h3>
+                    <h3 class="text-xl font-bold mb-3">Optimization</h3>
                     <p class="text-gray-600">
-                        We create SEO-optimized content and earn high-quality backlinks.
+                        Continuously test and refine ads for maximum performance and ROI.
                     </p>
                 </div>
 
@@ -259,12 +250,12 @@
                     data-aos="fade-up" data-aos-delay="500">
                     <div
                         class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-600 to-green-800 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg">
-                        <i class="fas fa-chart-bar"></i>
+                        <i class="fas fa-analytics"></i>
                     </div>
                     <div class="mb-2 font-bold text-green-600">Step 5</div>
-                    <h3 class="text-xl font-bold mb-3">Tracking & Reporting</h3>
+                    <h3 class="text-xl font-bold mb-3">Reporting & Scaling</h3>
                     <p class="text-gray-600">
-                        We monitor rankings, traffic, and ROI with detailed reports.
+                        Track results and scale successful campaigns for greater returns.
                     </p>
                 </div>
             </div>
@@ -276,10 +267,10 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">
-                    Why Choose Our <span class="text-gradient">Real Estate SEO</span> Services
+                    Why Choose Our <span class="text-gradient">Paid Advertising</span> Services
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    We specialize in driving qualified traffic and leads for real estate businesses
+                    Expert management of your real estate advertising campaigns for maximum ROI
                 </p>
             </div>
 
@@ -293,9 +284,9 @@
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-white">100% Focus on Real Estate SEO</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Real Estate Expertise</h3>
                             <p class="text-gray-300">
-                                We know what property buyers search for and how to target them effectively.
+                                We understand property buyer psychology and what drives conversions in real estate.
                             </p>
                         </div>
                     </div>
@@ -310,9 +301,9 @@
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-white">Local & Global SEO Expertise</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Multi-Platform Mastery</h3>
                             <p class="text-gray-300">
-                                Reach both investors and local buyers with targeted strategies.
+                                Expertise across Google Ads, Facebook, Instagram, LinkedIn, and programmatic platforms.
                             </p>
                         </div>
                     </div>
@@ -327,9 +318,9 @@
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-white">White-Hat SEO Practices</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">ROI-Focused Approach</h3>
                             <p class="text-gray-300">
-                                Safe, long-term results that won't put your website at risk.
+                                We optimize for cost-per-lead and return on ad spend, not just clicks or impressions.
                             </p>
                         </div>
                     </div>
@@ -344,9 +335,9 @@
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-white">Data-Driven Strategies</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Advanced Tracking</h3>
                             <p class="text-gray-300">
-                                Monthly reports and performance tracking to measure ROI.
+                                Comprehensive conversion tracking and attribution modeling for accurate ROI measurement.
                             </p>
                         </div>
                     </div>
@@ -361,9 +352,9 @@
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-white">Integrated Approach</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">A/B Testing</h3>
                             <p class="text-gray-300">
-                                Works seamlessly with your social media & paid campaigns.
+                                Continuous testing of creatives, copy, and audiences to improve performance.
                             </p>
                         </div>
                     </div>
@@ -378,9 +369,9 @@
                             <i class="fas fa-check"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold mb-2 text-white">Dedicated Account Management</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Transparent Reporting</h3>
                             <p class="text-gray-300">
-                                Your personal SEO expert who understands your business goals.
+                                Clear, monthly reports showing exactly how your ad budget is performing.
                             </p>
                         </div>
                     </div>
@@ -390,14 +381,14 @@
     </section>
 
     <!-- 🟩 Section 6: Case Studies / Results -->
-    <section class="py-20 bg-white">
+    <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">
-                    Real Results from Our <span class="text-gradient">SEO Campaigns</span>
+                    Real Results from Our <span class="text-gradient">Advertising Campaigns</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    Proven success stories from real estate clients who trusted our SEO expertise
+                    Proven success stories from real estate clients who achieved rapid growth with our paid ads
                 </p>
             </div>
 
@@ -408,18 +399,20 @@
                     <div
                         class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center text-white">
                         <div class="text-center p-6">
-                            <div class="text-4xl font-bold mb-2">300%</div>
-                            <div class="text-xl font-medium">Organic Traffic Increase</div>
+                            <div class="text-4xl font-bold mb-2">5:1</div>
+                            <div class="text-xl font-medium">ROI Achieved</div>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Builder Website</h3>
-                        <p class="text-gray-600 mb-4">Increased organic traffic by 300% in 4 months through targeted
-                            keyword optimization and content strategy.</p>
+                        <h3 class="text-xl font-bold mb-2">Luxury Condo Development</h3>
+                        <p class="text-gray-600 mb-4">Generated $5 in sales for every $1 spent on Facebook and Google
+                            Ads targeting high-net-worth investors.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-green-600">Residential Developer</span>
-                            <a href="#" class="text-sm font-medium hover:text-green-800 transition-colors">View Details
-                                →</a>
+                            <span class="text-sm font-medium text-green-600">Luxury Real Estate</span>
+                            <button
+                                wire:click="$dispatch('openModal', { component: 'case-study', arguments: { id: 1 } })"
+                                class="text-sm font-medium hover:text-green-800 transition-colors">View Details
+                                →</button>
                         </div>
                     </div>
                 </div>
@@ -430,18 +423,20 @@
                     <div
                         class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center text-white">
                         <div class="text-center p-6">
-                            <div class="text-4xl font-bold mb-2">Top 3</div>
-                            <div class="text-xl font-medium">Google Ranking</div>
+                            <div class="text-4xl font-bold mb-2">45%</div>
+                            <div class="text-xl font-medium">Cost Reduction</div>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Luxury Villa Project</h3>
-                        <p class="text-gray-600 mb-4">Ranked top 3 for "luxury villas in Dubai" through comprehensive
-                            local SEO and content marketing.</p>
+                        <h3 class="text-xl font-bold mb-2">Real Estate Agency</h3>
+                        <p class="text-gray-600 mb-4">Reduced cost-per-lead by 45% through optimized Google Ads
+                            campaigns and improved landing pages.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-green-600">Luxury Real Estate</span>
-                            <a href="#" class="text-sm font-medium hover:text-green-800 transition-colors">View Details
-                                →</a>
+                            <span class="text-sm font-medium text-green-600">Property Agency</span>
+                            <button
+                                wire:click="$dispatch('openModal', { component: 'case-study', arguments: { id: 2 } })"
+                                class="text-sm font-medium hover:text-green-800 transition-colors">View Details
+                                →</button>
                         </div>
                     </div>
                 </div>
@@ -452,18 +447,20 @@
                     <div
                         class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center text-white">
                         <div class="text-center p-6">
-                            <div class="text-4xl font-bold mb-2">120+</div>
-                            <div class="text-xl font-medium">Leads Per Month</div>
+                            <div class="text-4xl font-bold mb-2">200+</div>
+                            <div class="text-xl font-medium">Leads Monthly</div>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Real Estate Agency</h3>
-                        <p class="text-gray-600 mb-4">Generated 120+ property leads per month through organic search
-                            with optimized landing pages.</p>
+                        <h3 class="text-xl font-bold mb-2">Property Developer</h3>
+                        <p class="text-gray-600 mb-4">Generated 200+ qualified leads per month through targeted
+                            Instagram and Google Display campaigns.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-green-600">Property Agency</span>
-                            <a href="#" class="text-sm font-medium hover:text-green-800 transition-colors">View Details
-                                →</a>
+                            <span class="text-sm font-medium text-green-600">Residential Developer</span>
+                            <button
+                                wire:click="$dispatch('openModal', { component: 'case-study', arguments: { id: 3 } })"
+                                class="text-sm font-medium hover:text-green-800 transition-colors">View Details
+                                →</button>
                         </div>
                     </div>
                 </div>
@@ -472,7 +469,7 @@
     </section>
 
     <!-- 🟩 Section 7: Call to Action (CTA) -->
-    <section class="py-20 bg-gradient-to-r  from-black to-gray-900 relative overflow-hidden">
+    <section class="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
         <!-- Background elements -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
             <div class="absolute -top-24 -right-24 w-64 h-64 bg-green-600/10 rounded-full"></div>
@@ -481,35 +478,35 @@
 
         <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center text-white">
             <h2 class="text-4xl lg:text-5xl font-bold mb-6" data-aos="fade-up">
-                Ready to Appear on <span class="text-white">Top of Google Search</span>?
+                Ready to Drive <span class="text-white">Immediate Results</span>?
             </h2>
             <p class="text-xl mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                Let's create a real estate SEO strategy that gets you found, trusted, and chosen.
+                Let's create a paid advertising strategy that delivers qualified leads and measurable ROI from day one.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="{{ route('contact')}}"
+                <button href="{{ route('contact') }}" wire:navigate
                     class="px-8 py-4 rounded-xl bg-white text-green-600 font-semibold shadow-lg hover:bg-gray-100 transition-all flex items-center gap-2">
-                    <i class="fas fa-search"></i>
-                    Request a Free SEO Consultation
-                </a>
-                <a href="#"
+                    <i class="fas fa-bullseye"></i>
+                    Get Free Campaign Audit
+                </button>
+                <button wire:click="$dispatch('openModal', { component: 'guide-download' })"
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-file-alt"></i>
-                    Download SEO Guide
-                </a>
+                    Download Advertising Guide
+                </button>
             </div>
 
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
                 <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
                     <div class="text-2xl font-bold mb-2">Free</div>
-                    <div class="text-white/80">SEO Audit & Consultation</div>
+                    <div class="text-white/80">Campaign Audit & Strategy</div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-                    <div class="text-2xl font-bold mb-2">3-6 Months</div>
-                    <div class="text-white/80">First Visible Results</div>
+                    <div class="text-2xl font-bold mb-2">24-48h</div>
+                    <div class="text-white/80">Campaign Launch</div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-                    <div class="text-2xl font-bold mb-2">Monthly</div>
+                    <div class="text-2xl font-bold mb-2">Weekly</div>
                     <div class="text-white/80">Performance Reports</div>
                 </div>
             </div>
@@ -518,11 +515,13 @@
 
     <script>
         // Initialize AOS
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+        }
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

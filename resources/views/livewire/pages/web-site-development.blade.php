@@ -24,12 +24,12 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <a href="#contact"
+                <a href="{{ route('contact') }}" wire:navigate
                     class="px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-search"></i>
                     Get a Free Website Audit
                 </a>
-                <a href="#services"
+                <a href="#portfolio"
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-play-circle"></i>
                     View Our Work
@@ -59,10 +59,8 @@
             </h2>
             <div class="text-lg text-slate-600 space-y-6" data-aos="fade-up" data-aos-delay="200">
                 <p>
-                    Your website is your online sales center — it's where potential buyers explore your projects, trust
+                    Your website is your online sales center it's where potential buyers explore your projects, trust
                     your brand, and decide to connect.
-                </p>
-                <p>
                     A well-designed real estate website not only looks stunning but also functions as a powerful
                     marketing tool. It helps you generate leads, manage property listings, and build long-term
                     credibility in a competitive market.
@@ -333,7 +331,7 @@
     </section>
 
     <!-- 🟩 Section 6: Portfolio / Case Studies -->
-    <section class="py-20 bg-white">
+    <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">

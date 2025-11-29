@@ -26,12 +26,12 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <a href="#contact"
+                <a href="{{ route('contact') }}" wire:navigate
                     class="px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-chart-line"></i>
                     Get a Free SEO Audit
                 </a>
-                <a href="#services"
+                <a href="#portfolio"
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-play-circle"></i>
                     View Case Studies
@@ -61,14 +61,10 @@
             </h2>
             <div class="text-lg text-slate-600 space-y-6" data-aos="fade-up" data-aos-delay="200">
                 <p>
-                    Most property buyers start their search online — and if your website isn't visible on Google, your
+                    Most property buyers start their search online and if your website isn't visible on Google, your
                     competitors get the leads.
-                </p>
-                <p>
                     Our real estate SEO services help you rank higher for property-related keywords, generate quality
                     traffic, and convert visitors into verified leads.
-                </p>
-                <p>
                     From on-page optimization to Google Maps visibility, we ensure your brand stays ahead in local and
                     global property searches.
                 </p>
@@ -393,7 +389,7 @@
     </section>
 
     <!-- 🟩 Section 6: Case Studies / Results -->
-    <section class="py-20 bg-white">
+    <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">

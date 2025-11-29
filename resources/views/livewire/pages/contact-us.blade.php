@@ -57,21 +57,15 @@
                             brands,
                             generate high-quality leads, and close more deals through powerful digital marketing
                             strategies.
-                        </p>
-                        <p>
                             At Real Landing, we are dedicated to transforming the way real estate professionals market
                             their properties and brands. As a full-service real estate marketing agency, we provide
                             comprehensive digital solutions designed to generate qualified leads, enhance brand
                             visibility,
                             and accelerate sales performance.
-                        </p>
-                        <p>
                             With a deep understanding of the real estate industry, our team combines strategic insight
                             with innovative technology to deliver measurable results. From tailored marketing campaigns
                             and professional branding to high-converting landing pages and lead generation systems, we
                             ensure every client achieves a strong and consistent market presence.
-                        </p>
-                        <p>
                             Our commitment to excellence, integrity, and innovation drives everything we do. Whether you
                             are a real estate agent, brokerage, or developer, Real Landing is your trusted partner for
                             impactful marketing strategies that turn opportunities into success.

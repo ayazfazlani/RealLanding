@@ -26,12 +26,12 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <a href="#contact"
+                <a href="{{ route('contact') }}"
                     class="px-8 py-4 rounded-xl bg-gradient-to-r  from-primary to-accent text-white font-semibold shadow-lg glow hover:shadow-xl transition-all flex items-center gap-2">
                     <i class="fas fa-rocket"></i>
                     Let's Grow Your Brand Online
                 </a>
-                <a href="#services"
+                <a href="#portfolio"
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-play-circle"></i>
                     View Our Work
@@ -63,12 +63,8 @@
                 <p>
                     In today's market, buyers discover properties through social media before visiting a site or calling
                     an agent.
-                </p>
-                <p>
                     Platforms like Instagram, Facebook, LinkedIn, and YouTube allow real estate businesses to showcase
                     projects, build trust, and drive direct inquiries.
-                </p>
-                <p>
                     Our social media marketing services focus on creating engaging content, running effective ad
                     campaigns, and managing communities that convert followers into serious property buyers.
                 </p>
@@ -393,7 +389,7 @@
     </section>
 
     <!-- 🟩 Section 6: Case Studies / Portfolio -->
-    <section class="py-20 bg-white">
+    <section id="portfolio" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-aos="fade-up">

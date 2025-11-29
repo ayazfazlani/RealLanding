@@ -35,7 +35,7 @@
                             <i class="fas fa-history"></i>
                             Our Story
                         </a>
-                        <a href="#team"
+                        <a href="{{ route('home') }}#team"
                             class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                             <i class="fas fa-users"></i>
                             Meet Our Team

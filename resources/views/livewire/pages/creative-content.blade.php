@@ -59,13 +59,9 @@
             </h2>
             <div class="text-lg text-gray-600 space-y-6" data-aos="fade-up" data-aos-delay="200">
                 <p>
-                    Real estate is all about visuals — buyers decide with their eyes before they contact you.
-                </p>
-                <p>
-                    Strong creative content turns your property into an experience — through stunning photos, videos, 3D
+                    Real estate is all about visuals buyers decide with their eyes before they contact you.
+                    Strong creative content turns your property into an experience through stunning photos, videos, 3D
                     walkthroughs, and compelling copy.
-                </p>
-                <p>
                     Our creative team combines design, storytelling, and real estate expertise to produce content that
                     not only looks beautiful but also drives real buyer action.
                 </p>

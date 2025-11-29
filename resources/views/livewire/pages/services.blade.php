@@ -32,7 +32,7 @@
                     <i class="fas fa-rocket"></i>
                     Explore Our Services
                 </a>
-                <a href="#contact"
+                <a href="{{ route('contact') }}" wire:navigate
                     class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center gap-2">
                     <i class="fas fa-calendar-check"></i>
                     Book a Consultation
