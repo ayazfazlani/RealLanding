@@ -101,7 +101,15 @@
                         <!-- Service 1 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="100">
-                            <div class="text-3xl mb-4 text-green-600">📸</div>
+                            <!-- Camera Icon -->
+                            <div class="text-green-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 7h4l2-3h6l2 3h4v13H3V7z" />
+                                    <circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Property Photography & Videography</h3>
                             <p class="text-gray-600">
                                 Professional shoots that highlight your project's architecture, interiors, and
@@ -112,7 +120,14 @@
                         <!-- Service 2 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="200">
-                            <div class="text-3xl mb-4 text-green-600">🚁</div>
+                            <!-- Drone Icon -->
+                            <div class="text-green-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 10l4.553-2.276A2 2 0 0121 9.618V14.38a2 2 0 01-1.447 1.894L15 14M9 10L4.447 7.724A2 2 0 003 9.618V14.38a2 2 0 001.447 1.894L9 14M12 14v6m0-6l3 3m-3-3l-3 3" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Drone Shoots & 3D Walkthroughs</h3>
                             <p class="text-gray-600">
                                 Give potential buyers a stunning aerial and virtual experience of your property —
@@ -123,7 +138,14 @@
                         <!-- Service 3 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="300">
-                            <div class="text-3xl mb-4 text-green-600">🎬</div>
+                            <!-- Video Camera Icon -->
+                            <div class="text-green-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 10l4.553-2.276A2 2 0 0121 9.618V14.38a2 2 0 01-1.447 1.894L15 14M9 10L4.447 7.724A2 2 0 003 9.618V14.38a2 2 0 001.447 1.894L9 14M12 14v6m0-6l3 3m-3-3l-3 3" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Video Ads & Reels Production</h3>
                             <p class="text-gray-600">
                                 Short, engaging videos and reels designed for platforms like Instagram, YouTube, and
@@ -134,7 +156,14 @@
                         <!-- Service 4 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="400">
-                            <div class="text-3xl mb-4 text-green-600">✍️</div>
+                            <!-- Pencil Icon -->
+                            <div class="text-green-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5h2m2 0h2m-4 2v10M5 15h14M5 19h14" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Copywriting & Content Writing</h3>
                             <p class="text-gray-600">
                                 From property listings and brochures to blogs and ad copies, we write persuasive,
@@ -145,7 +174,14 @@
                         <!-- Service 5 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="500">
-                            <div class="text-3xl mb-4 text-green-600">🧠</div>
+                            <!-- Paint Brush / Design Icon -->
+                            <div class="text-green-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 10l4.553-2.276A2 2 0 0121 9.618V14.38a2 2 0 01-1.447 1.894L15 14M9 10L4.447 7.724A2 2 0 003 9.618V14.38a2 2 0 001.447 1.894L9 14M12 14v6m0-6l3 3m-3-3l-3 3" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Graphic Design & Branding Materials</h3>
                             <p class="text-gray-600">
                                 Brochures, hoardings, digital posts, and brand assets — everything your real estate
@@ -156,7 +192,14 @@
                         <!-- Service 6 -->
                         <div class="p-6 bg-white rounded-xl shadow-lg card-hover border border-gray-200"
                             data-aos="fade-right" data-aos-delay="600">
-                            <div class="text-3xl mb-4 text-green-600">📱</div>
+                            <!-- Campaign / Bullhorn Icon -->
+                            <div class="text-green-600 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11 5h2m2 0h2m-4 2v10M5 15h14M5 19h14" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Creative Campaign Concepts</h3>
                             <p class="text-gray-600">
                                 We plan and design full creative campaigns for project launches, brand awareness, and
@@ -180,6 +223,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- 🟩 Section 4: Our Process -->
     <section class="py-20 bg-white">
@@ -493,7 +537,8 @@
                 campaign visuals.
             </p>
 
-            <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+            {{-- <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto" data-aos="fade-up"
+                data-aos-delay="400">
                 <form class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
@@ -552,7 +597,8 @@
                         No commitment required. We'll get back to you within 24 hours.
                     </p>
                 </form>
-            </div>
+            </div> --}}
+            <livewire:contact-form>
         </div>
     </section>
 

@@ -493,7 +493,8 @@
                 campaign visuals.
             </p>
 
-            <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+            {{-- <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl mx-auto" data-aos="fade-up"
+                data-aos-delay="400">
                 <form class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
@@ -552,7 +553,9 @@
                         No commitment required. We'll get back to you within 24 hours.
                     </p>
                 </form>
-            </div>
+            </div> --}}
+
+            <livewire:contact-form />
         </div>
     </section>
 

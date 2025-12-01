@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\ContactForm;
 use App\Livewire\Home;
 use App\Livewire\Pages\About;
 use App\Livewire\Pages\ContactUs;
@@ -30,3 +31,5 @@ Route::get('/automation', PagesAutomationAIAgents::class)->name('automation');
 Route::get('/creative-content=services', CreativeAndContentServices::class)->name('creative.contentservices');
 Route::get('/paid-advertising', PaidAdvertising::class)->name('paid.advertising');
 Route::get('/lead-generation', LeadGeneration::class)->name('lead.generation');
+
+Route::get('contact-form', ContactForm::class)->name('contact.form');

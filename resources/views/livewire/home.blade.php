@@ -778,7 +778,7 @@
                         marketing strategy.
                     </p>
 
-                    <form class="space-y-6" id="contactForm">
+                    {{-- <form class="space-y-6" id="contactForm">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-gray-300 text-sm font-medium mb-2">First Name *</label>
@@ -868,7 +868,9 @@
                         <p class="text-gray-400 text-sm text-center">
                             * Required fields. We respect your privacy and will never share your information.
                         </p>
-                    </form>
+                    </form> --}}
+
+                    <livewire:contact-form>
                 </div>
 
                 <!-- FAQ Section -->

@@ -270,9 +270,9 @@ tailwind.config = {
         <div>
           © <span id="year"></span> Real Landing. All rights reserved.
         </div>
-        <div class="mt-3 md:mt-0">
+        {{-- <div class="mt-3 md:mt-0">
           Made with ♥ — <span class="font-medium">Real Landing</span>
-        </div>
+        </div> --}}
       </div>
     </div>
   </footer>
