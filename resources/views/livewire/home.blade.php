@@ -217,11 +217,11 @@
                 $stats = [
                 ['number' => '200', 'suffix' => '+', 'title' => 'Successful Projects', 'description' => 'Delivered
                 high-quality solutions across various industries'],
-                ['number' => '60', 'suffix' => '% ↑', 'title' => 'Traffic Growth', 'description' => 'Average increase in
+                ['number' => '75', 'suffix' => '%', 'title' => 'Traffic Growth', 'description' => 'Average increase in
                 organic traffic for our SEO clients'],
-                ['number' => '30', 'suffix' => '% ↑', 'title' => 'Revenue Boost', 'description' => 'Average revenue
+                ['number' => '45', 'suffix' => '%', 'title' => 'Revenue Boost', 'description' => 'Average revenue
                 growth for businesses we\'ve partnered with'],
-                ['number' => '98', 'suffix' => '%', 'title' => 'Client Satisfaction', 'description' => 'Of our clients
+                ['number' => '99', 'suffix' => '%', 'title' => 'Client Satisfaction', 'description' => 'Of our clients
                 would recommend our services to others']
                 ];
                 @endphp
@@ -231,7 +231,7 @@
                     data-aos="fade-up" data-aos-delay="{{ $index * 100 }}">
                     <div class="text-4xl font-bold text-primary mb-2 apims-counter" data-target="{{ $stat['number'] }}"
                         data-suffix="{{ $stat['suffix'] }}">
-                        {{ $stat['number'] }}
+                        {{ $stat['number'] }} {{ $stat['suffix'] }}
                     </div>
                     <h3 class="text-xl font-semibold text-slate-900">{{ $stat['title'] }}</h3>
                     <p class="mt-3 text-slate-600 text-sm">

@@ -44,7 +44,7 @@
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Creative
                             Automation</a>
                         <a href="{{ route('creative.content') }}" wire:navigate
-                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Consulting</a>
+                            class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Business Consultation</a>
                         <a href="{{ route('lead.generation') }}" wire:navigate
                             class="block px-4 py-2 text-sm hover:bg-slate-50 hover:scale-105">Lead
                             Generation</a>

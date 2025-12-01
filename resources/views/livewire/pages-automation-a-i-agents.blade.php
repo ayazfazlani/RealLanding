@@ -61,16 +61,12 @@
             </h2>
             <div class="text-lg text-slate-600 space-y-6" data-aos="fade-up" data-aos-delay="200">
                 <p>
-                    Real estate marketing doesn't stop at lead generation — success depends on how quickly and
+                    Real estate marketing doesn't stop at lead generation success depends on how quickly and
                     efficiently you respond.
-                </p>
-                <p>
                     Our AI-powered automation and CRM solutions ensure every inquiry is followed up instantly, every
                     lead is tracked, and your sales team always knows what's next.
-                </p>
-                <p>
                     From chatbots to email flows and centralized dashboards, we integrate technology that helps you
-                    manage more leads with less effort — and close more deals.
+                    manage more leads with less effort and close more deals.
                 </p>
             </div>
 
