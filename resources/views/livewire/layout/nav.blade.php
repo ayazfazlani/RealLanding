@@ -116,7 +116,8 @@
                         Content</a>
                     <a href="{{ route('lead.generation') }}" wire:navigate class="block text-sm">Lead Generation</a>
                     <a href="{{ route('paid.advertising') }}" wire:navigate class="block text-sm">Paid Advertising</a>
-                    <a href="{{ route('creative.content') }}" wire:navigate class="block text-sm">Consulting</a>
+                    <a href="{{ route('creative.content') }}" wire:navigate class="block text-sm">Business
+                        Consultation</a>
                 </div>
             </details>
 
