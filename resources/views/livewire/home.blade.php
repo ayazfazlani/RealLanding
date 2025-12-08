@@ -341,7 +341,7 @@
                         Grow Your Brand Where Your Audience Lives
                     </h2>
                     <p class="text-lg text-slate-600">
-                        At APIMS Technology, we create content that speaks your brand's voice and engages your audience.
+                        At Real Landing, we create content that speaks your brand's voice and engages your audience.
                         From posts to paid ads, we handle it all so you can focus on your business. Our smart and
                         creative social media strategies help you grow on Instagram, Facebook, LinkedIn, TikTok, and
                         more.
