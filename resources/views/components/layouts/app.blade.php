@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width" initial-scale="1" />
   {{-- livewire dynamic title --}}
   <title>{{ $title ?? 'Real Landing - Marketing Agency'}}</title>
+  {{-- favicon --}}
+  <link rel="favicon" href="{{ asset('favicon.ico') }}">
   <meta name="description" content="Professional modern landing page built with Tailwind CSS" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/index.css" />
